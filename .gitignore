@@ -4,3 +4,6 @@ dist/
 .env.local
 *.log
 client_secret*.json
+
+# TypeScript build cache
+*.tsbuildinfo
