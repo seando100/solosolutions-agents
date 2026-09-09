@@ -1,0 +1,26 @@
+{
+  "name": "solosolutions-agents",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "SoloSolutionsAI Agent Workforce — 21 autonomous agents across Spinup, Marketing, and Support teams",
+  "scripts": {
+    "dev": "tsx orchestrator/src/index.ts",
+    "build": "tsc --build",
+    "test": "vitest",
+    "lint": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.15",
+    "@types/node-cron": "^3.0.11",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1"
+  }
+}

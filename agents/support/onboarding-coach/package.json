@@ -1,0 +1,15 @@
+{
+  "name": "@solo/agent-morgan",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Morgan — Onboarding Coach. Watches new signups and nudges if they stall during the first 14 days.",
+  "dependencies": {
+    "@solo/shared": "workspace:*",
+    "@supabase/supabase-js": "^2.76.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2",
+    "@types/node": "^22.13.10"
+  }
+}

@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SoloSolutionsAI — AI Agent Workforce</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #1e293b;
+    background: #ffffff;
+    line-height: 1.6;
+    padding: 0;
+  }
+
+  .page {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 60px 48px;
+  }
+
+  @media print {
+    .page { padding: 40px 32px; }
+    .page-break { page-break-before: always; }
+    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+
+  /* Header */
+  .header {
+    border-bottom: 3px solid #0F2745;
+    padding-bottom: 32px;
+    margin-bottom: 40px;
+  }
+  .header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0F2745;
+    letter-spacing: -0.5px;
+  }
+  .header .subtitle {
+    font-size: 16px;
+    color: #64748b;
+    margin-top: 6px;
+  }
+  .header .date {
+    font-size: 13px;
+    color: #94a3b8;
+    margin-top: 4px;
+  }
+
+  .section {
+    margin-bottom: 44px;
+  }
+  .section h2 {
+    font-size: 19px;
+    font-weight: 600;
+    color: #0F2745;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  .section h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 12px;
+    margin-top: 28px;
+  }
+  .section p {
+    font-size: 14px;
+    color: #475569;
+    margin-bottom: 12px;
+  }
+  .section ul {
+    font-size: 14px;
+    color: #475569;
+    margin-bottom: 12px;
+    padding-left: 24px;
+  }
+  .section ul li { margin-bottom: 6px; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+  thead th {
+    background: #0F2745;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: left;
+    padding: 10px 14px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  thead th:first-child { border-radius: 6px 0 0 0; }
+  thead th:last-child { border-radius: 0 6px 0 0; }
+  thead.blue th { background: #2563eb; }
+  thead.green th { background: #16a34a; }
+  thead.amber th { background: #b45309; }
+  tbody td {
+    padding: 9px 14px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #334155;
+  }
+  tbody tr:nth-child(even) td { background: #f8fafc; }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr.total-row td {
+    font-weight: 700;
+    color: #0F2745;
+    background: #f1f5f9;
+    border-top: 2px solid #0F2745;
+  }
+  tbody tr.total-row-blue td { font-weight: 700; color: #1e40af; background: #eff6ff; border-top: 2px solid #2563eb; }
+  tbody tr.total-row-green td { font-weight: 700; color: #166534; background: #f0fdf4; border-top: 2px solid #16a34a; }
+  tbody tr.total-row-amber td { font-weight: 700; color: #92400e; background: #fffbeb; border-top: 2px solid #b45309; }
+  .text-right { text-align: right; }
+
+  .callout {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #0F2745;
+    border-radius: 0 6px 6px 0;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+  }
+  .callout p { font-size: 13px; color: #475569; margin: 0; }
+  .callout strong { color: #0F2745; }
+
+  .callout-green {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-left: 4px solid #16a34a;
+    border-radius: 0 6px 6px 0;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+  }
+  .callout-green p { font-size: 13px; color: #166534; margin: 0; }
+  .callout-green strong { color: #15803d; }
+
+  .callout-blue {
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-left: 4px solid #2563eb;
+    border-radius: 0 6px 6px 0;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+  }
+  .callout-blue p { font-size: 13px; color: #1e40af; margin: 0; }
+  .callout-blue strong { color: #1d4ed8; }
+
+  .callout-amber {
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+    border-left: 4px solid #d97706;
+    border-radius: 0 6px 6px 0;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+  }
+  .callout-amber p { font-size: 13px; color: #92400e; margin: 0; }
+  .callout-amber strong { color: #b45309; }
+
+  .summary-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 24px;
+  }
+  .summary-grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .summary-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 24px;
+    text-align: center;
+  }
+  .summary-card.navy { border-top: 4px solid #0F2745; }
+  .summary-card.green { border-top: 4px solid #16a34a; }
+  .summary-card.blue { border-top: 4px solid #2563eb; }
+  .summary-card.amber { border-top: 4px solid #d97706; }
+  .summary-card .label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #94a3b8;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .summary-card .big-number {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0F2745;
+    line-height: 1.1;
+  }
+  .summary-card .big-number.green { color: #16a34a; }
+  .summary-card .big-number.blue { color: #2563eb; }
+  .summary-card .big-number.amber { color: #b45309; }
+  .summary-card .sub {
+    font-size: 13px;
+    color: #64748b;
+    margin-top: 4px;
+  }
+
+  .metric-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .metric-row-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+  .metric {
+    background: #f8fafc;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+  }
+  .metric .value {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0F2745;
+  }
+  .metric .value.green { color: #16a34a; }
+  .metric .desc {
+    font-size: 11px;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-top: 4px;
+  }
+
+  .badge {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 3px 8px;
+    border-radius: 4px;
+    vertical-align: middle;
+  }
+  .badge-navy { background: #0F2745; color: #fff; }
+  .badge-blue { background: #dbeafe; color: #1e40af; }
+  .badge-green { background: #dcfce7; color: #166534; }
+  .badge-amber { background: #fef3c7; color: #92400e; }
+
+  /* Agent profile card */
+  .agent-profile {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 20px;
+  }
+  .agent-profile .agent-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: #0F2745;
+    margin-bottom: 4px;
+  }
+  .agent-profile .agent-role {
+    font-size: 12px;
+    color: #64748b;
+    margin-bottom: 8px;
+  }
+  .agent-profile .agent-meta {
+    font-size: 11px;
+    color: #94a3b8;
+  }
+  .agent-profile .agent-desc {
+    font-size: 13px;
+    color: #475569;
+  }
+  .agent-profile .agent-desc strong { color: #334155; }
+
+  /* Comparison card */
+  .compare-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 24px;
+  }
+  .compare-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 24px;
+    text-align: center;
+  }
+  .compare-card .compare-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #94a3b8;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .compare-card .compare-value {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  .compare-card .compare-value.red { color: #dc2626; }
+  .compare-card .compare-value.green { color: #16a34a; }
+  .compare-card .compare-sub {
+    font-size: 12px;
+    color: #64748b;
+    margin-top: 6px;
+  }
+  .compare-card.traditional { border-top: 4px solid #dc2626; }
+  .compare-card.ai { border-top: 4px solid #16a34a; }
+
+  .org-chart {
+    text-align: center;
+    margin: 24px 0 32px;
+    font-size: 13px;
+    color: #475569;
+    line-height: 1.8;
+  }
+  .org-chart .ceo {
+    display: inline-block;
+    background: #0F2745;
+    color: #fff;
+    padding: 8px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .org-chart .orchestrator {
+    display: inline-block;
+    background: #f1f5f9;
+    color: #334155;
+    padding: 6px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 8px;
+    border: 1px solid #e2e8f0;
+  }
+  .team-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    margin-top: 12px;
+  }
+  .team-card {
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+  }
+  .team-card.blue-bg { background: #eff6ff; border: 1px solid #bfdbfe; }
+  .team-card.green-bg { background: #f0fdf4; border: 1px solid #bbf7d0; }
+  .team-card.amber-bg { background: #fffbeb; border: 1px solid #fde68a; }
+  .team-card .tc-title {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .team-card .tc-count {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .team-card .tc-count.blue { color: #2563eb; }
+  .team-card .tc-count.green { color: #16a34a; }
+  .team-card .tc-count.amber { color: #b45309; }
+  .team-card .tc-sub {
+    font-size: 11px;
+    color: #64748b;
+    margin-top: 2px;
+  }
+
+  .footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid #e2e8f0;
+    font-size: 12px;
+    color: #94a3b8;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>SoloSolutionsAI</h1>
+    <div class="subtitle">AI Agent Workforce &mdash; Operations, Costs &amp; Capabilities</div>
+    <div class="date">Prepared March 8, 2026 &middot; Confidential</div>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- THE BIG PICTURE -->
+  <!-- ============================================ -->
+  <div class="section">
+    <h2>The Vision: An AI-Powered Company</h2>
+    <p>SoloSolutionsAI operates with zero full-time employees and 21 autonomous AI agents organized into three specialized teams. These agents handle vertical product spinup, marketing, and customer support across all Solo[Profession]AI verticals &mdash; 24 hours a day, 7 days a week, 365 days a year.</p>
+
+    <div class="summary-grid-3">
+      <div class="summary-card navy">
+        <div class="label">Total Agents</div>
+        <div class="big-number">21</div>
+        <div class="sub">Across 3 teams</div>
+      </div>
+      <div class="summary-card green">
+        <div class="label">Monthly Operating Cost</div>
+        <div class="big-number green">$145</div>
+        <div class="sub">Per vertical &middot; all agents</div>
+      </div>
+      <div class="summary-card blue">
+        <div class="label">Verticals Supported</div>
+        <div class="big-number blue">5+</div>
+        <div class="sub">Simultaneously</div>
+      </div>
+    </div>
+
+    <!-- ORG CHART -->
+    <div class="org-chart">
+      <div class="ceo">You (Founder &amp; CEO)</div>
+      <br>
+      <div style="color: #94a3b8; font-size: 20px;">&darr;</div>
+      <div class="orchestrator">Orchestrator Agent</div>
+      <div class="team-cards">
+        <div class="team-card blue-bg">
+          <div class="tc-title" style="color: #1e40af;">Spinup Team</div>
+          <div class="tc-count blue">6</div>
+          <div class="tc-sub">agents</div>
+        </div>
+        <div class="team-card green-bg">
+          <div class="tc-title" style="color: #166534;">Marketing Team</div>
+          <div class="tc-count green">8</div>
+          <div class="tc-sub">agents</div>
+        </div>
+        <div class="team-card amber-bg">
+          <div class="tc-title" style="color: #92400e;">Support Team</div>
+          <div class="tc-count amber">7</div>
+          <div class="tc-sub">agents</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- COST COMPARISON -->
+  <!-- ============================================ -->
+  <div class="section">
+    <h2>The Economics: AI Workforce vs. Traditional Staffing</h2>
+    <p>To put the agent workforce costs in perspective, here&rsquo;s what it would look like with human employees doing the same work.</p>
+
+    <div class="compare-grid">
+      <div class="compare-card traditional">
+        <div class="compare-label">Traditional Staffing (21 roles)</div>
+        <div class="compare-value red">$52,500/mo</div>
+        <div class="compare-sub">Even at $30K/yr part-time per role = $2,500/mo each</div>
+      </div>
+      <div class="compare-card ai">
+        <div class="compare-label">AI Agent Workforce (21 agents)</div>
+        <div class="compare-value green">$145/mo</div>
+        <div class="compare-sub">Per vertical &middot; $500/mo across all 5 verticals</div>
+      </div>
+    </div>
+
+    <h3>What $145/mo Gets You</h3>
+    <p>To appreciate how absurdly efficient this is, here&rsquo;s what common business subscriptions cost by comparison:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Expense</th>
+          <th class="text-right">Monthly Cost</th>
+          <th>What You Get</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Zoom Business</td>
+          <td class="text-right">$219</td>
+          <td>Video calls for 10 users</td>
+        </tr>
+        <tr>
+          <td>Slack Pro (10 users)</td>
+          <td class="text-right">$87.50</td>
+          <td>Team messaging</td>
+        </tr>
+        <tr>
+          <td>HubSpot Starter</td>
+          <td class="text-right">$200</td>
+          <td>Basic CRM &amp; marketing</td>
+        </tr>
+        <tr>
+          <td>Mailchimp Standard</td>
+          <td class="text-right">$120</td>
+          <td>Email marketing for 2,500 contacts</td>
+        </tr>
+        <tr>
+          <td>Hootsuite Professional</td>
+          <td class="text-right">$99</td>
+          <td>Social media scheduling</td>
+        </tr>
+        <tr>
+          <td>Zendesk Suite Team</td>
+          <td class="text-right">$228</td>
+          <td>Basic customer support for 4 agents</td>
+        </tr>
+        <tr style="background: #f0fdf4;">
+          <td><strong>SoloSolutionsAI Agent Workforce</strong></td>
+          <td class="text-right"><strong>$145</strong></td>
+          <td><strong>21 autonomous agents: spinup, marketing, support, analytics, SEO, churn prevention &mdash; running 24/7</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout-green">
+      <p><strong>The punchline:</strong> Your entire 21-agent AI workforce costs less per month than a single Zoom Business subscription. It costs less than four Zendesk support seats. It costs less than one hour of a marketing consultant&rsquo;s time. And it never sleeps, never calls in sick, never needs a vacation, and scales across every vertical you launch without adding a single dollar in headcount.</p>
+    </div>
+
+    <h3>More Comparisons That Hit Home</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Thing</th>
+          <th class="text-right">Cost</th>
+          <th>vs. AI Workforce</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>One part-time virtual assistant</td>
+          <td class="text-right">$2,000/mo</td>
+          <td>= 13.8 months of your entire AI workforce</td>
+        </tr>
+        <tr>
+          <td>One freelance content writer (4 posts/mo)</td>
+          <td class="text-right">$1,200/mo</td>
+          <td>= 8.3 months of your Content Writer agent</td>
+        </tr>
+        <tr>
+          <td>One social media manager</td>
+          <td class="text-right">$3,500/mo</td>
+          <td>= 24 months of your entire Marketing Team</td>
+        </tr>
+        <tr>
+          <td>One entry-level customer support rep</td>
+          <td class="text-right">$3,000/mo</td>
+          <td>= 20.7 months of your entire Support Team</td>
+        </tr>
+        <tr>
+          <td>Spinning up a new SaaS vertical (dev agency)</td>
+          <td class="text-right">$25,000&ndash;50,000</td>
+          <td>= ~$15 with your Spinup Team</td>
+        </tr>
+        <tr>
+          <td>Netflix Premium subscription</td>
+          <td class="text-right">$22.99/mo</td>
+          <td>&asymp; the cost of your entire Support Team</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="page-break"></div>
+
+  <!-- ============================================ -->
+  <!-- TEAM 1: SPINUP -->
+  <!-- ============================================ -->
+  <div class="section">
+    <h2>Team 1: Vertical Spinup Agents <span class="badge badge-blue">6 Agents</span></h2>
+    <p>The Spinup Team takes a profession name and produces a fully deployed, live SaaS product. This team runs on-demand &mdash; activated when a new vertical is ready to launch.</p>
+
+    <div class="callout-blue">
+      <p><strong>Input:</strong> &ldquo;Launch SoloVetAI&rdquo; &rarr; <strong>Output:</strong> Fully deployed product at solovetai.com with auth, intake engine, email pipeline, voice assistant, and admin portal. <strong>Time: 2&ndash;3 days. Cost: ~$15.</strong></p>
+    </div>
+
+    <table>
+      <thead class="blue">
+        <tr>
+          <th>Agent</th>
+          <th>Function</th>
+          <th>Tools</th>
+          <th class="text-right">Cost/Run</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Schema Architect</strong></td>
+          <td>Researches the target profession, identifies required intake fields, generates the full field schema with validation rules, data types, and bilingual labels (EN/ES). Outputs a structured config file that drives every other agent.</td>
+          <td>Claude API, web research</td>
+          <td class="text-right">$1&ndash;2</td>
+        </tr>
+        <tr>
+          <td><strong>Copy Agent</strong></td>
+          <td>Takes the schema + profession context and generates all customer-facing text: landing page (hero, pain points, features, pricing, CTA), email templates (attorney + client versions), FAQ content, onboarding wizard text, chat assistant greeting, and error messages.</td>
+          <td>Claude API, brand guide</td>
+          <td class="text-right">$5&ndash;10</td>
+        </tr>
+        <tr>
+          <td><strong>Codebase Cloner</strong></td>
+          <td>Forks the SoloLawyerAI repository, replaces all profession-specific constants (field names, labels, system prompts, page titles), updates package.json, environment configs, and route names. Produces a clean, buildable repo ready for deployment.</td>
+          <td>GitHub API, file system</td>
+          <td class="text-right">$2&ndash;3</td>
+        </tr>
+        <tr>
+          <td><strong>Infra Agent</strong></td>
+          <td>Creates a new Supabase project, runs all database migrations, configures auth settings (OTP, redirect URLs), sets environment secrets (OpenAI, Resend, Vapi keys), creates Vercel project, deploys the codebase, and wires the custom domain DNS.</td>
+          <td>Supabase CLI, Vercel CLI, DNS API</td>
+          <td class="text-right">$1&ndash;2</td>
+        </tr>
+        <tr>
+          <td><strong>Vapi Agent</strong></td>
+          <td>Creates a Vapi voice assistant with a profession-specific system prompt and intake field schema. Configures the greeting, voice persona, and end-of-call webhook. Provisions a dedicated phone number and links it to the assistant.</td>
+          <td>Vapi API</td>
+          <td class="text-right">$0.50</td>
+        </tr>
+        <tr>
+          <td><strong>QA Agent</strong></td>
+          <td>Runs end-to-end smoke tests: creates a test account, completes an intake via chat, verifies the DB row was created with all fields, checks that attorney and client emails were sent, tests the admin portal login, and validates the Marketing Kit renders correctly.</td>
+          <td>Playwright, Supabase MCP</td>
+          <td class="text-right">$3&ndash;5</td>
+        </tr>
+        <tr class="total-row-blue">
+          <td colspan="3"><strong>Total per Vertical Spinup</strong></td>
+          <td class="text-right"><strong>$12&ndash;22</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="compare-grid">
+      <div class="compare-card traditional">
+        <div class="compare-label">Dev Agency Quote for New SaaS Product</div>
+        <div class="compare-value red">$25K&ndash;$50K</div>
+        <div class="compare-sub">4&ndash;8 weeks delivery</div>
+      </div>
+      <div class="compare-card ai">
+        <div class="compare-label">Spinup Team</div>
+        <div class="compare-value green">~$15</div>
+        <div class="compare-sub">2&ndash;3 days delivery</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-break"></div>
+
+  <!-- ============================================ -->
+  <!-- TEAM 2: MARKETING -->
+  <!-- ============================================ -->
+  <div class="section">
+    <h2>Team 2: Marketing Agents <span class="badge badge-green">8 Agents</span></h2>
+    <p>The Marketing Team activates automatically when a new vertical launches. It generates content, manages advertising, monitors SEO, tracks competitors, and reports analytics &mdash; across every vertical, simultaneously.</p>
+
+    <div class="callout-green">
+      <p><strong>Auto-trigger:</strong> Vertical goes live &rarr; Marketing Orchestrator activates all 8 agents &rarr; blog posts queued, social posts scheduled, ad campaigns staged for approval, keyword baseline captured. <strong>Human-in-the-loop: ad spend approval only.</strong></p>
+    </div>
+
+    <table>
+      <thead class="green">
+        <tr>
+          <th>Agent</th>
+          <th>Function</th>
+          <th>Cadence</th>
+          <th class="text-right">Monthly Cost</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Content Writer</strong></td>
+          <td>Generates SEO-optimized blog posts targeting profession-specific long-tail keywords. Examples: &ldquo;5 Signs Your Solo Practice Needs Intake Automation,&rdquo; &ldquo;How Bilingual Intake Doubles Your Client Base.&rdquo; Produces 4 posts/month with meta descriptions, headers, and internal linking. Adapts tone and terminology per vertical.</td>
+          <td>On launch + weekly</td>
+          <td class="text-right">$15&ndash;25</td>
+        </tr>
+        <tr>
+          <td><strong>Social Media Agent</strong></td>
+          <td>Creates platform-specific posts for Facebook, Instagram, and LinkedIn. Tailors content to where the profession is most active (attorneys &rarr; Facebook, accountants &rarr; LinkedIn). Generates caption copy, hashtag sets, and suggested image prompts. Produces 12 posts/month per vertical.</td>
+          <td>3x per week</td>
+          <td class="text-right">$3&ndash;8</td>
+        </tr>
+        <tr>
+          <td><strong>Ad Creative Agent</strong></td>
+          <td>Generates Meta and Google ad copy: headlines, descriptions, call-to-action text, and A/B test variants. Creates 10+ ad variants per campaign, optimized for different audiences (pain-point focused, feature-focused, testimonial-style). Refreshes creatives monthly to prevent ad fatigue.</td>
+          <td>On launch + monthly</td>
+          <td class="text-right">$5&ndash;10</td>
+        </tr>
+        <tr>
+          <td><strong>Ad Manager Agent</strong></td>
+          <td>Sets up campaigns in Meta Business Suite and Google Ads. Configures audience targeting by job title, interests, and geography. Monitors daily performance (CTR, CPC, conversion rate). Pauses underperformers, reallocates budget to winners. Stages new campaigns for founder approval before activating spend.</td>
+          <td>Daily monitoring</td>
+          <td class="text-right">$5&ndash;10</td>
+        </tr>
+        <tr>
+          <td><strong>SEO Agent</strong></td>
+          <td>Monitors keyword rankings for target terms per vertical. Identifies content gaps and recommends new blog topics. Tracks competitor content and backlink profiles. Alerts when rankings drop or new opportunities emerge. Generates weekly SEO health report.</td>
+          <td>Weekly scan</td>
+          <td class="text-right">$3&ndash;8</td>
+        </tr>
+        <tr>
+          <td><strong>Review Solicitor</strong></td>
+          <td>After a customer has been active for 14+ days, sends a personalized email requesting a review on G2 or Capterra. Includes direct link to the review page and a brief prompt suggesting what to mention. Tracks who has been asked to avoid duplicate requests.</td>
+          <td>Event-driven</td>
+          <td class="text-right">$1&ndash;2</td>
+        </tr>
+        <tr>
+          <td><strong>Analytics Agent</strong></td>
+          <td>Pulls data from Meta Ads, Google Ads, Stripe, and Supabase. Compiles weekly digest: ad spend, cost per trial signup, trial-to-paid conversion rate, MRR, churn rate, and ROAS. Flags anomalies (spend spike, conversion drop). Delivers summary via email or Slack.</td>
+          <td>Weekly digest</td>
+          <td class="text-right">$3&ndash;6</td>
+        </tr>
+        <tr>
+          <td><strong>Competitor Watch</strong></td>
+          <td>Monitors competitor websites, pricing pages, and product announcements. Tracks new entrants in each vertical. Alerts when a competitor changes pricing, launches a new feature, or targets the solo niche. Produces bi-weekly competitive intelligence brief.</td>
+          <td>Bi-weekly scan</td>
+          <td class="text-right">$3&ndash;6</td>
+        </tr>
+        <tr class="total-row-green">
+          <td colspan="3"><strong>Total Marketing Team (per vertical / month)</strong></td>
+          <td class="text-right"><strong>$38&ndash;75</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="compare-grid">
+      <div class="compare-card traditional">
+        <div class="compare-label">Equivalent Human Marketing Team</div>
+        <div class="compare-value red">$15K&ndash;$25K/mo</div>
+        <div class="compare-sub">Content writer + social manager + ads specialist + SEO + analytics</div>
+      </div>
+      <div class="compare-card ai">
+        <div class="compare-label">AI Marketing Team</div>
+        <div class="compare-value green">$38&ndash;$75/mo</div>
+        <div class="compare-sub">All 8 functions &middot; per vertical &middot; 24/7</div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <p><strong>Note:</strong> Ad spend (the money paid to Meta/Google for impressions and clicks) is separate from agent operating costs. The agents <em>manage</em> the campaigns; the ad budget is your growth investment. Target: $500&ndash;1,000/mo per vertical initially, scaling with ROAS data.</p>
+    </div>
+  </div>
+
+  <div class="page-break"></div>
+
+  <!-- ============================================ -->
+  <!-- TEAM 3: SUPPORT -->
+  <!-- ============================================ -->
+  <div class="section">
+    <h2>Team 3: Support Agents <span class="badge badge-amber">7 Agents</span></h2>
+    <p>The Support Team handles all customer-facing support, proactive onboarding, churn prevention, and technical diagnostics. Because every vertical shares the same infrastructure (Supabase, Vercel, Resend, Vapi), support agents work across all verticals without retraining.</p>
+
+    <div class="callout-amber">
+      <p><strong>Cross-vertical efficiency:</strong> &ldquo;How do I update my logo?&rdquo; is the same answer whether the customer is a lawyer, a vet, or a realtor. The Support Team learns once and supports everywhere.</p>
+    </div>
+
+    <table>
+      <thead class="amber">
+        <tr>
+          <th>Agent</th>
+          <th>Function</th>
+          <th>Trigger</th>
+          <th class="text-right">Monthly Cost</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Triage Agent</strong></td>
+          <td>Reads every inbound email to support@solo[x]ai.com via Gmail API. Classifies each ticket by priority (urgent, normal, low) and category (billing, technical, onboarding, feature request, general question). Routes to the appropriate agent or, if escalation is needed, packages context for the founder.</td>
+          <td>Every inbound email</td>
+          <td class="text-right">$1&ndash;3</td>
+        </tr>
+        <tr>
+          <td><strong>Tier 1 Responder</strong></td>
+          <td>Handles common questions autonomously using a knowledge base built from the product FAQ, help docs, and prior resolved tickets. Answers questions like &ldquo;How do I change my logo?&rdquo;, &ldquo;Where is my intake link?&rdquo;, &ldquo;How do I connect Calendly?&rdquo;, &ldquo;Can I customize my intake questions?&rdquo; Sends professional, branded responses from support@.</td>
+          <td>Routed by Triage</td>
+          <td class="text-right">$2&ndash;5</td>
+        </tr>
+        <tr>
+          <td><strong>Bug Detective</strong></td>
+          <td>When a technical issue is reported, automatically investigates before escalating. Checks Supabase edge function logs for errors, verifies Vercel deployment status, checks Resend email delivery logs, queries the database for the customer&rsquo;s recent intake records. Packages diagnostic findings into a clear summary so the issue can be resolved in minutes, not hours.</td>
+          <td>Triage flags as technical</td>
+          <td class="text-right">$2&ndash;5</td>
+        </tr>
+        <tr>
+          <td><strong>Onboarding Coach</strong></td>
+          <td>Proactively monitors new signups. If a customer hasn&rsquo;t completed key setup steps within 1, 3, or 7 days (uploaded logo, configured intake questions, run a test intake), sends a personalized nudge email with step-by-step instructions and a direct link to the setup they&rsquo;re missing. Goal: maximize activation rate.</td>
+          <td>Day 1, 3, 7 post-signup</td>
+          <td class="text-right">$2&ndash;5</td>
+        </tr>
+        <tr>
+          <td><strong>Churn Prevention</strong></td>
+          <td>Runs a daily scan for at-risk customers. Warning signals: no login in 10+ days, zero intakes this month, failed payment, declining usage trend. Sends tailored re-engagement emails based on the specific risk signal. For payment failures, triggers a gentle &ldquo;update your card&rdquo; reminder before the account is suspended.</td>
+          <td>Daily scan</td>
+          <td class="text-right">$3&ndash;6</td>
+        </tr>
+        <tr>
+          <td><strong>Feedback Collector</strong></td>
+          <td>After a support ticket is resolved, sends a brief satisfaction survey (1&ndash;5 rating + optional comment). Aggregates feature requests from survey responses and support conversations into a ranked backlog, weighted by frequency and customer tier. Delivers a monthly product feedback summary to the founder.</td>
+          <td>Post-resolution</td>
+          <td class="text-right">$1&ndash;2</td>
+        </tr>
+        <tr>
+          <td><strong>Escalation Agent</strong></td>
+          <td>When an issue is beyond autonomous resolution (billing disputes, complex bugs, feature requests requiring product decisions), packages the full context: customer profile, subscription tier, conversation history, diagnostic logs, and suggested resolution options. Delivers a clean brief to the founder via Slack or email so the response can be drafted in minutes.</td>
+          <td>When Tier 1 can&rsquo;t resolve</td>
+          <td class="text-right">$1&ndash;2</td>
+        </tr>
+        <tr class="total-row-amber">
+          <td colspan="3"><strong>Total Support Team (per vertical / month)</strong></td>
+          <td class="text-right"><strong>$12&ndash;28</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="compare-grid">
+      <div class="compare-card traditional">
+        <div class="compare-label">Equivalent Human Support Team</div>
+        <div class="compare-value red">$9K&ndash;$15K/mo</div>
+        <div class="compare-sub">Tier 1 rep + onboarding specialist + customer success manager</div>
+      </div>
+      <div class="compare-card ai">
+        <div class="compare-label">AI Support Team</div>
+        <div class="compare-value green">$12&ndash;$28/mo</div>
+        <div class="compare-sub">All 7 functions &middot; per vertical &middot; 24/7 &middot; multilingual</div>
+      </div>
+    </div>
+
+    <h3>Support Flow Example</h3>
+    <div class="callout">
+      <p><strong>Scenario:</strong> A customer emails: &ldquo;My intake emails aren&rsquo;t sending.&rdquo;</p>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Step</th>
+          <th>Agent</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Triage</td>
+          <td>Classifies as <span class="badge badge-amber">Technical &middot; High Priority</span>. Routes to Bug Detective.</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Bug Detective</td>
+          <td>Checks Supabase logs for <code>send-intake-emails</code> errors. Checks Resend delivery API. Checks <code>attorney_profiles</code> for valid email. <strong>Finds:</strong> Resend returned HTTP 429 (rate limit hit).</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Tier 1 Responder</td>
+          <td>Sends branded reply: &ldquo;Hi [name], we identified a temporary delay in email delivery due to high volume. Your intakes are saved safely &mdash; emails will be delivered shortly. No action needed on your end.&rdquo;</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Analytics Agent</td>
+          <td>Logs the incident. You receive a digest: &ldquo;1 support ticket auto-resolved today. Resend rate limit at 2:14 PM &mdash; monitor if recurring.&rdquo;</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="margin-top: 12px;"><strong>Time from customer email to resolution: &lt;5 minutes. Human involvement: zero.</strong></p>
+  </div>
+
+  <div class="page-break"></div>
+
+  <!-- ============================================ -->
+  <!-- CONSOLIDATED COSTS -->
+  <!-- ============================================ -->
+  <div class="section">
+    <h2>Consolidated Operating Costs</h2>
+
+    <h3>Per Vertical Per Month</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Team</th>
+          <th class="text-right">Agents</th>
+          <th class="text-right">Low Estimate</th>
+          <th class="text-right">High Estimate</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Spinup Team (amortized)</td>
+          <td class="text-right">6</td>
+          <td class="text-right">$1</td>
+          <td class="text-right">$2</td>
+        </tr>
+        <tr>
+          <td>Marketing Team</td>
+          <td class="text-right">8</td>
+          <td class="text-right">$38</td>
+          <td class="text-right">$75</td>
+        </tr>
+        <tr>
+          <td>Support Team</td>
+          <td class="text-right">7</td>
+          <td class="text-right">$12</td>
+          <td class="text-right">$28</td>
+        </tr>
+        <tr>
+          <td>External APIs (search, monitoring)</td>
+          <td class="text-right">&mdash;</td>
+          <td class="text-right">$10</td>
+          <td class="text-right">$20</td>
+        </tr>
+        <tr>
+          <td>Infrastructure (hosting, scheduler)</td>
+          <td class="text-right">&mdash;</td>
+          <td class="text-right">$0</td>
+          <td class="text-right">$20</td>
+        </tr>
+        <tr class="total-row">
+          <td><strong>Total per Vertical</strong></td>
+          <td class="text-right"><strong>21</strong></td>
+          <td class="text-right"><strong>$61</strong></td>
+          <td class="text-right"><strong>$145</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Across All 5 Verticals</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Scope</th>
+          <th class="text-right">Monthly (Low)</th>
+          <th class="text-right">Monthly (High)</th>
+          <th class="text-right">Annual (Low)</th>
+          <th class="text-right">Annual (High)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1 vertical (SoloLawyerAI only)</td>
+          <td class="text-right">$61</td>
+          <td class="text-right">$145</td>
+          <td class="text-right">$732</td>
+          <td class="text-right">$1,740</td>
+        </tr>
+        <tr>
+          <td>3 verticals</td>
+          <td class="text-right">$150</td>
+          <td class="text-right">$350</td>
+          <td class="text-right">$1,800</td>
+          <td class="text-right">$4,200</td>
+        </tr>
+        <tr class="total-row">
+          <td><strong>5 verticals (full portfolio)</strong></td>
+          <td class="text-right"><strong>$200</strong></td>
+          <td class="text-right"><strong>$500</strong></td>
+          <td class="text-right"><strong>$2,400</strong></td>
+          <td class="text-right"><strong>$6,000</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>One-Time Vertical Spinup Costs</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Agent</th>
+          <th>What It Does</th>
+          <th class="text-right">Cost</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Schema Architect</td>
+          <td>Generates full intake field schema</td>
+          <td class="text-right">$1&ndash;2</td>
+        </tr>
+        <tr>
+          <td>Copy Agent</td>
+          <td>Writes all landing page &amp; email content</td>
+          <td class="text-right">$5&ndash;10</td>
+        </tr>
+        <tr>
+          <td>Codebase Cloner</td>
+          <td>Forks and customizes the entire repo</td>
+          <td class="text-right">$2&ndash;3</td>
+        </tr>
+        <tr>
+          <td>Infra Agent</td>
+          <td>Creates Supabase + Vercel + DNS</td>
+          <td class="text-right">$1&ndash;2</td>
+        </tr>
+        <tr>
+          <td>Vapi Agent</td>
+          <td>Creates voice assistant + provisions phone</td>
+          <td class="text-right">$0.50</td>
+        </tr>
+        <tr>
+          <td>QA Agent</td>
+          <td>End-to-end smoke tests</td>
+          <td class="text-right">$3&ndash;5</td>
+        </tr>
+        <tr class="total-row">
+          <td colspan="2"><strong>Total to launch an entire new SaaS vertical</strong></td>
+          <td class="text-right"><strong>$12&ndash;22</strong></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- BUILD ORDER -->
+  <!-- ============================================ -->
+  <div class="section">
+    <h2>Agent Build Priority</h2>
+    <p>Agents are built sequentially based on business impact. Support agents come first (retain customers), then marketing agents (acquire customers), then spinup agents (expand the portfolio).</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Priority</th>
+          <th>Agent(s)</th>
+          <th>Team</th>
+          <th>Rationale</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="badge badge-navy">1</span></td>
+          <td>Triage + Tier 1 Responder</td>
+          <td><span class="badge badge-amber">Support</span></td>
+          <td>Immediate value once paying customers arrive. Reduces founder inbox from day one.</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-navy">2</span></td>
+          <td>Content Writer + Ad Creative</td>
+          <td><span class="badge badge-green">Marketing</span></td>
+          <td>Drives customer acquisition. SEO content compounds over time &mdash; start early.</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-navy">3</span></td>
+          <td>Schema Architect + Codebase Cloner</td>
+          <td><span class="badge badge-blue">Spinup</span></td>
+          <td>Enables rapid vertical expansion. Unlocks the portfolio growth strategy.</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-navy">4</span></td>
+          <td>Onboarding Coach + Churn Prevention</td>
+          <td><span class="badge badge-amber">Support</span></td>
+          <td>Retention &gt; acquisition once customer base exists. Prevents silent churn.</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-navy">5</span></td>
+          <td>Ad Manager + Analytics</td>
+          <td><span class="badge badge-green">Marketing</span></td>
+          <td>Closes the autonomous marketing loop. Ads run and optimize without you.</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-navy">6</span></td>
+          <td>Bug Detective + QA Agent</td>
+          <td><span class="badge badge-amber">Support</span> / <span class="badge badge-blue">Spinup</span></td>
+          <td>Completes the autonomous operations stack. Technical issues resolve faster.</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-navy">7</span></td>
+          <td>All remaining agents</td>
+          <td>All</td>
+          <td>Full workforce operational. SEO, competitor watch, review solicitor, feedback, escalation.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- TECHNOLOGY STACK -->
+  <!-- ============================================ -->
+  <div class="section">
+    <h2>Technology Stack</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Component</th>
+          <th>Technology</th>
+          <th>Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Orchestration</td>
+          <td>Claude Agent SDK</td>
+          <td>Agent coordination, task routing, context management</td>
+        </tr>
+        <tr>
+          <td>Intelligence</td>
+          <td>Claude API (Anthropic)</td>
+          <td>Reasoning, content generation, decision-making for all agents</td>
+        </tr>
+        <tr>
+          <td>Tool Access</td>
+          <td>MCP Servers</td>
+          <td>Supabase MCP, GitHub MCP, filesystem MCP for structured tool use</td>
+        </tr>
+        <tr>
+          <td>Voice / Phone</td>
+          <td>Vapi API</td>
+          <td>Assistant creation, phone number provisioning</td>
+        </tr>
+        <tr>
+          <td>Deployment</td>
+          <td>Vercel CLI / API</td>
+          <td>Project creation, deployment, domain management</td>
+        </tr>
+        <tr>
+          <td>Support Email</td>
+          <td>Gmail API (Google Workspace)</td>
+          <td>Reading inbound support emails, sending responses</td>
+        </tr>
+        <tr>
+          <td>Transactional Email</td>
+          <td>Resend API</td>
+          <td>Automated onboarding, churn prevention, review solicitation emails</td>
+        </tr>
+        <tr>
+          <td>Advertising</td>
+          <td>Meta Marketing API + Google Ads API</td>
+          <td>Campaign creation, management, performance monitoring</td>
+        </tr>
+        <tr>
+          <td>Analytics</td>
+          <td>Stripe API + Supabase queries</td>
+          <td>Revenue metrics, usage tracking, churn detection</td>
+        </tr>
+        <tr>
+          <td>Testing</td>
+          <td>Playwright</td>
+          <td>Browser-based end-to-end testing for QA agent</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- HUMAN IN THE LOOP -->
+  <!-- ============================================ -->
+  <div class="section">
+    <h2>Human-in-the-Loop Controls</h2>
+    <p>Full automation is the goal, but the founder retains approval gates on high-stakes decisions:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Decision</th>
+          <th>Agent Prepares</th>
+          <th>Founder Approves</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ad campaign launch</td>
+          <td>Creative, targeting, budget allocation staged</td>
+          <td>One-click approval to go live</td>
+        </tr>
+        <tr>
+          <td>New vertical launch</td>
+          <td>Everything built, tested, and ready</td>
+          <td>Final &ldquo;go / no-go&rdquo; decision</td>
+        </tr>
+        <tr>
+          <td>Pricing changes</td>
+          <td>Competitor data, margin analysis</td>
+          <td>Always manual</td>
+        </tr>
+        <tr>
+          <td>Customer-facing copy (initially)</td>
+          <td>Drafts ready for review</td>
+          <td>Review and approve until trust is established</td>
+        </tr>
+        <tr>
+          <td>Escalated support tickets</td>
+          <td>Full context package assembled</td>
+          <td>Founder drafts response (with agent-suggested options)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout">
+      <p><strong>Everything else runs autonomously.</strong> You wake up to a digest: &ldquo;Here&rsquo;s what your workforce did overnight: 3 support tickets resolved, 2 blog posts published, ad campaign ROAS improved 12%, 1 at-risk customer re-engaged.&rdquo;</p>
+    </div>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- THE BOTTOM LINE -->
+  <!-- ============================================ -->
+  <div class="section" style="text-align: center; padding: 40px 0 20px;">
+    <h2 style="border: none; text-align: center; font-size: 22px; margin-bottom: 20px;">The Bottom Line</h2>
+
+    <div class="summary-grid-3" style="max-width: 700px; margin: 0 auto 28px;">
+      <div class="summary-card navy">
+        <div class="label">Workforce Size</div>
+        <div class="big-number">21</div>
+        <div class="sub">Autonomous agents</div>
+      </div>
+      <div class="summary-card green">
+        <div class="label">Monthly Cost (5 verticals)</div>
+        <div class="big-number green">$500</div>
+        <div class="sub">All teams &middot; 24/7</div>
+      </div>
+      <div class="summary-card blue">
+        <div class="label">New Vertical Cost</div>
+        <div class="big-number blue">~$15</div>
+        <div class="sub">Fully deployed SaaS</div>
+      </div>
+    </div>
+
+    <p style="font-size: 15px; color: #475569; max-width: 680px; margin: 0 auto 16px; line-height: 1.7;">
+      A 21-agent workforce running across 5 SaaS verticals &mdash; handling product spinup, content marketing, paid advertising, SEO, customer support, onboarding, churn prevention, analytics, and competitive intelligence &mdash; for less per month than most companies pay for their Zoom subscription.
+    </p>
+    <p style="font-size: 16px; color: #0F2745; font-weight: 600; max-width: 600px; margin: 0 auto;">
+      This is not a future vision. The technology exists today. The only question is how fast you build it.
+    </p>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    SoloSolutionsAI &middot; AI Agent Workforce &middot; Confidential &middot; March 2026
+  </div>
+
+</div>
+
+</body>
+</html>

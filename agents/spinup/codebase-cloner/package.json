@@ -1,0 +1,14 @@
+{
+  "name": "@solo/agent-rory",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Rory — Codebase Engineer. Clones the SoloLawyerAI template repo, swaps all profession-specific content (branding, colors, copy, schema), and produces a clean, buildable vertical codebase.",
+  "dependencies": {
+    "@solo/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2",
+    "@types/node": "^22.13.10"
+  }
+}

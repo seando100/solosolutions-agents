@@ -1,0 +1,14 @@
+{
+  "name": "@solo/agent-skyler",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Skyler — Schema Architect. Researches a profession, designs the full intake schema (questions, field types, validation rules, bilingual labels), and outputs a vertical config.",
+  "dependencies": {
+    "@solo/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2",
+    "@types/node": "^22.13.10"
+  }
+}

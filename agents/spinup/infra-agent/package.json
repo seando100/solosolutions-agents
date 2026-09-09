@@ -1,0 +1,14 @@
+{
+  "name": "@solo/agent-lennox",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Lennox — Infrastructure Engineer. Creates Supabase project, runs database migrations, deploys to Vercel, configures DNS, sets environment variables, and hands over the keys.",
+  "dependencies": {
+    "@solo/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2",
+    "@types/node": "^22.13.10"
+  }
+}

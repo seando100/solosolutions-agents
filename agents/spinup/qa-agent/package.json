@@ -1,0 +1,14 @@
+{
+  "name": "@solo/agent-dakota",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Dakota — QA Engineer. Runs the full smoke test for a newly spun-up vertical: verifies deployment, creates a test account, completes an intake, checks the database, verifies emails sent. If it passes, it's live.",
+  "dependencies": {
+    "@solo/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2",
+    "@types/node": "^22.13.10"
+  }
+}

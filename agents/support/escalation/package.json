@@ -1,0 +1,14 @@
+{
+  "name": "@solo/agent-avery",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Avery — Escalation Coordinator. Packages escalated tickets for founder review, forwards approved responses, and feeds resolved answers back into the knowledge base.",
+  "dependencies": {
+    "@solo/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2",
+    "@types/node": "^22.13.10"
+  }
+}

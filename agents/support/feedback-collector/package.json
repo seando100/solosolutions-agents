@@ -1,0 +1,14 @@
+{
+  "name": "@solo/agent-quinn",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Quinn — Feedback Analyst. Follows up on resolved tickets, collects ratings and feedback, tracks feature requests.",
+  "dependencies": {
+    "@solo/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2",
+    "@types/node": "^22.13.10"
+  }
+}

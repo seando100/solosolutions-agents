@@ -1,0 +1,14 @@
+{
+  "name": "@solo/agent-kai",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Kai — Voice Systems Engineer. Creates the Vapi voice assistant for a vertical, configures the persona and prompt, sets up the webhook endpoint, and provisions the phone number.",
+  "dependencies": {
+    "@solo/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2",
+    "@types/node": "^22.13.10"
+  }
+}

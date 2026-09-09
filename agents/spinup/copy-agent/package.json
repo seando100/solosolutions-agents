@@ -1,0 +1,14 @@
+{
+  "name": "@solo/agent-emery",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Emery — Copy Strategist. Generates all customer-facing copy for a new vertical: landing page, emails, FAQ, onboarding, error messages.",
+  "dependencies": {
+    "@solo/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2",
+    "@types/node": "^22.13.10"
+  }
+}

@@ -1,0 +1,13 @@
+vertical: sololawyer
+display_name: SoloLawyerAI
+domain: sololawyerai.com
+support_email: support@sololawyerai.com
+
+supabase:
+  url: ${SUPABASE_SOLOLAWYER_URL}
+  service_key: ${SUPABASE_SOLOLAWYER_SERVICE_KEY}
+
+branding:
+  company_name: SoloLawyerAI
+  tagline: "AI-powered intake for solo attorneys"
+  support_signature: "The SoloLawyerAI Support Team"

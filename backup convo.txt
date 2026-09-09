@@ -1,0 +1,1933 @@
+
+hello, opened Solosolutions-agents.  you can pick up from memories
+Read C:\Users\seanp\.claude\projects\c--DevProjects-solosolutions-agents\memory\MEMORY.md
+Bash Check memory directory
+IN
+ls "C:\Users\seanp\.claude\projects\c--DevProjects-solosolutions-agents\memory/" 2>/dev/null || echo "No memory directory yet"
+
+OUT
+No memory directory yet
+Bash List project root
+IN
+ls "c:/DevProjects/solosolutions-agents/" 2>/dev/null | head -30
+
+OUT
+0
+Bash List project root with details
+IN
+ls -la "c:/DevProjects/solosolutions-agents/"
+
+OUT
+total 4
+drwxr-xr-x 1 seanp 197612 0 Mar  8 22:09 .
+drwxr-xr-x 1 seanp 197612 0 Mar  8 22:10 ..
+No previous memories for this project, and the directory is empty — a fresh start.
+
+What's the vision for solosolutions-agents? What are we building here?
+
+You literally told me before closed out Sololawyer that you would have access to the memories - lol.  I just copied the solosolutions-agent-worforce.html her into the open folder
+Ha, fair enough — let me check the other memory locations I have access to!
+
+Bash Check HCI project memory
+IN
+ls "c:/Users/seanp/.claude/projects/c--Users-seanp-projects-human-centered-intelligence/memory/"
+
+OUT
+MEMORY.md
+Read c:\DevProjects\solosolutions-agents\solosolutions-agent-workforce.html
+Read c:\Users\seanp\.claude\projects\c--Users-seanp-projects-human-centered-intelligence\memory\MEMORY.md
+Read C:\Users\seanp\.claude\projects\c--DevProjects-solosolutions-agents\05ff2fa6-5855-4f67-b27a-37d0102463ca\tool-results\toolu_01BG6hRVxLsHszVos6fyBjst.txt
+Got it — I have the HCI/Apollo project memory from the Sololawyer sessions. Now let me read through the full workforce HTML document to understand what we're working with here.
+
+Read C:\Users\seanp\.claude\projects\c--DevProjects-solosolutions-agents\05ff2fa6-5855-4f67-b27a-37d0102463ca\tool-results\toolu_01VaiNpDssDFsriP78hnDGXP.txt (from line 51)
+Let me read the actual HTML file directly — the nested output is getting unwieldy.
+
+Read c:\DevProjects\solosolutions-agents\solosolutions-agent-workforce.html (lines 131-530)
+Read c:\DevProjects\solosolutions-agents\solosolutions-agent-workforce.html (from line 530)
+Alright, I've read the full document. This is a seriously well-thought-out blueprint — 21 AI agents across 3 teams (Spinup, Marketing, Support) to run SoloSolutionsAI as a zero-employee company, scaling across Solo[Profession]AI verticals at ~$145/mo per vertical.
+
+I have the full context from the HCI/Apollo project memory too, so I know the SoloLawyerAI architecture (Supabase, Vercel, Vapi, Resend, etc.) that serves as the template for vertical expansion.
+
+Let me save memory for this project so we don't lose context again.
+
+Bash Create memory directory
+IN
+mkdir -p "C:\Users\seanp\.claude\projects\c--DevProjects-solosolutions-agents\memory"
+
+OUT
+0
+Write C:\Users\seanp\.claude\projects\c--DevProjects-solosolutions-agents\memory\MEMORY.md
+57 lines
+# Project Memory: solosolutions-agents
+
+## What This Is
+SoloSolutionsAI — an AI-powered company with zero FTEs. 21 autonomous AI agents organized into 3 teams that handle vertical product spinup, marketing, and customer support across all Solo[Profession]AI verticals (SoloLawyerAI, SoloVetAI, etc.).
+
+## Blueprint Document
+- `solosolutions-agent-workforce.html` — master plan document (org chart, costs, agent specs, build priority, tech stack)
+
+## Architecture Overview
+- **3 Teams**: Spinup (6 agents), Marketing (8 agents), Support (7 agents)
+- **Orchestrator Agent** coordinates all teams, reports to founder
+- **Cost**: ~$145/mo per vertical (high estimate), ~$500/mo across 5 verticals
+- **New vertical spinup**: ~$15, 2-3 days
+
+## Teams & Agents
+
+### Team 1: Spinup (on-demand, per-vertical launch)
+Schema Architect, Copy Agent, Codebase Cloner, Infra Agent, Vapi Agent, QA Agent
+
+### Team 2: Marketing (ongoing, per-vertical)
+Content Writer, Social Media Agent, Ad Creative Agent, Ad Manager Agent, SEO Agent, Review Solicitor, Analytics Agent, Competitor Watch
+
+### Team 3: Support (ongoing, cross-vertical)
+Triage Agent, Tier 1 Responder, Bug Detective, Onboarding Coach, Churn Prevention, Feedback Collector, Escalation Agent
+
+## Tech Stack
+- **Orchestration**: Claude Agent SDK
+- **Intelligence**: Claude API (Anthropic)
+- **Tool Access**: MCP Servers (Supabase, GitHub, filesystem)
+- **Voice**: Vapi API
+- **Deployment**: Vercel CLI/API
+- **Support Email**: Gmail API
+- **Transactional Email**: Resend API
+- **Advertising**: Meta Marketing API + Google Ads API
+- **Analytics**: Stripe API + Supabase queries
+- **Testing**: Playwright
+
+## Build Priority (from blueprint)
+1. Triage + Tier 1 Responder (Support) — immediate value with paying customers
+2. Content Writer + Ad Creative (Marketing) — SEO compounds early
+3. Schema Architect + Codebase Cloner (Spinup) — enables vertical expansion
+4. Onboarding Coach + Churn Prevention (Support) — retention
+5. Ad Manager + Analytics (Marketing) — autonomous marketing loop
+6. Bug Detective + QA Agent (Support/Spinup) — technical autonomy
+7. All remaining agents — full workforce
+
+## Human-in-the-Loop Gates
+Ad campaign launch, new vertical go/no-go, pricing changes, initial customer-facing copy, escalated support tickets
+
+## Related Projects
+- SoloLawyerAI is the template product (Supabase + Vercel + Vapi + Resend architecture)
+- HCI/Apollo portfolio site (see c--Users-seanp-projects-human-centered-intelligence memory)
+
+## Current State
+- Blueprint document complete (March 8, 2026)
+- Project directory is fresh — no code yet
+Memory saved. Now I won't forget next time.
+
+So — we've got the blueprint, the directory is fresh, and the build priority is clear. Where do you want to start? The plan says Triage + Tier 1 Responder first, but you might have a different priority in mind given where SoloLawyerAI is at. What's the play?
+
+You saved it last time - lol.  Anyway, let's get back to it.  Yes we talked abot Triage + Tier 1 responder because Sololawyer will be our first to launch.  Perhaps, you should pause and also read the corproate strategy then it will all make sense?
+Good call — let me find the corporate strategy doc.
+
+Globpattern: "**/*strategy*"
+No files found
+Globpattern: "**/*corporate*"
+No files found
+Globpattern: "**/*.html"
+Found 1 file
+Globpattern: "**/*.pdf"
+No files found
+Globpattern: "**/*.md"
+No files found
+Only the workforce HTML is in this directory. The corporate strategy doc might be in another location — maybe in the SoloLawyer project or somewhere else on your machine. Can you point me to where it lives, or drop it into this folder?
+
+Ok, I jsut dropped in the .md file.  Look again
+Globpattern: "**/*.md"
+Found 1 file
+Read c:\DevProjects\solosolutions-agents\solosolutions-corporate-strategy.md
+Now the full picture clicks. This is a seriously comprehensive strategy — $100M ARR portfolio across 5 verticals, 96%+ gross margins, powered by an AI agent workforce that replaces what would be a 50+ person company.
+
+Let me update memory with the corporate strategy context.
+
+Edit C:\Users\seanp\.claude\projects\c--DevProjects-solosolutions-agents\memory\MEMORY.md
+Added 19 lines
+Okay — full picture absorbed. The strategy is clear:
+
+Validate SoloLawyerAI (in testing now) → prove the economics
+Build the agent workforce starting with Triage + Tier 1 Responder so support is automated from day one when paying customers arrive
+Replicate across verticals using the Spinup agents
+Dominate the solo practitioner niche
+The corporate strategy doc even lays out the directory structure for this repo. Ready to start building the Triage + Tier 1 Responder agents using the Claude Agent SDK with MCP integrations. What's your preference — should we scaffold the full project structure first, or dive straight into the first two agents?
+
+I hired you as my chief architect here, so let's do what is right - not what is easy or facinating at the moment :)
+Ha — fair point. Architect hat on, not developer-who-wants-to-write-code hat.
+
+Before we write a single line, we need to make proper architectural decisions. Let me put together a plan that covers the foundational questions:
+
+What's the orchestration model? (How do agents coordinate, share state, get triggered?)
+What's the runtime? (Long-running processes? Cron-triggered? Event-driven?)
+How do agents access tools? (MCP server setup, shared clients, credential management)
+What does the project scaffold look like? (Monorepo structure, configs, shared utilities)
+How does the Triage + Tier 1 Responder actually work end-to-end? (Gmail → classify → respond → log)
+Let me draft an architecture plan rather than jumping to code. Give me a minute.
+
+Agent:Architecture plan for agent workforce
+IN
+I need to design the foundational architecture for SoloSolutionsAI's AI agent workforce. This is a greenfield project. The context:
+
+## What We're Building
+A system of 21 autonomous AI agents organized into 3 teams (Spinup, Marketing, Support) that operate a zero-employee SaaS company. The agents handle vertical product spinup, marketing, and customer support across multiple Solo[Profession]AI products.
+
+## First Agents to Build
+Priority 1: Triage Agent + Tier 1 Responder (Support team)
+- Triage: Reads inbound support emails via Gmail API, classifies by priority (urgent/normal/low) and category (billing/technical/onboarding/feature request/general), routes to appropriate agent
+- Tier 1 Responder: Handles common questions autonomously using knowledge base (FAQ, help docs, prior resolved tickets), sends branded responses
+
+## Tech Stack (decided)
+- **Orchestration**: Claude Agent SDK
+- **Intelligence**: Claude API (Anthropic)
+- **Tool Access**: MCP Servers (Supabase, GitHub, filesystem)
+- **Email (support)**: Gmail API (Google Workspace) for reading inbound, sending responses
+- **Email (transactional)**: Resend API
+- **Database**: Supabase (each vertical has its own Supabase project)
+- **Hosting**: Vercel (products), but agents need their own runtime
+
+## Planned Directory Structure
+```
+solosolutions-agents/
+  ├── orchestrator/
+  ├── agents/
+  │   ├── spinup/
+  │   │   ├── schema-architect/
+  │   │   ├── copy-agent/
+  │   │   ├── codebase-cloner/
+  │   │   ├── infra-agent/
+  │   │   ├── vapi-agent/
+  │   │   └── qa-agent/
+  │   ├── marketing/
+  │   │   ├── content-writer/
+  │   │   ├── social-media/
+  │   │   ├── ad-creative/
+  │   │   ├── ad-manager/
+  │   │   ├── seo/
+  │   │   ├── analytics/
+  │   │   ├── review-solicitor/
+  │   │   └── competitor-watch/
+  │   └── support/
+  │       ├── triage/
+  │       ├── tier1-responder/
+  │       ├── bug-detective/
+  │       ├── onboarding-coach/
+  │       ├── churn-prevention/
+  │       ├── feedback-collector/
+  │       └── escalation/
+  ├── configs/
+  │   ├── sololawyer.yaml
+  │   └── ...
+  └── shared/
+```
+
+## Key Questions to Answer in the Architecture Plan
+
+1. **Runtime Model**: How do these agents run? Options:
+   - Long-running Node.js processes polling for work?
+   - Cron-triggered (e.g., check Gmail every N minutes)?
+   - Event-driven (webhooks from Gmail, Supabase realtime)?
+   - Some hybrid?
+   - Where do they run? (VPS, Railway, Fly.io, local, serverless?)
+
+2. **Claude Agent SDK Architecture**: 
+   - How do we structure agents using the Claude Agent SDK?
+   - What does the orchestrator look like?
+   - How do agents communicate with each other (e.g., Triage routes to Tier 1)?
+   - Do we use the SDK's built-in tool system or custom MCP integrations?
+
+3. **State Management**:
+   - Where do support tickets/conversations live?
+   - How does the system track which tickets are open, resolved, escalated?
+   - Do we need a dedicated database for agent state, or use the vertical's Supabase?
+
+4. **Gmail Integration**:
+   - Gmail API vs Google Workspace push notifications
+   - How to handle multiple support@solo[x]ai.com addresses across verticals
+   - Email threading (maintaining conversation context)
+
+5. **Knowledge Base for Tier 1**:
+   - Where does the FAQ/help content live?
+   - How does Tier 1 retrieve relevant answers? (RAG? Direct lookup? Embedded in prompt?)
+   - How do resolved tickets feed back into the knowledge base?
+
+6. **Credential/Secret Management**:
+   - Multiple API keys (Claude, Gmail, Supabase per vertical, Resend, etc.)
+   - How are these stored and accessed by agents?
+
+7. **Monitoring & Logging**:
+   - How does the founder see what agents did? (The "morning digest")
+   - Where are logs stored?
+   - Error handling and alerting
+
+8. **Project Setup**:
+   - TypeScript monorepo?
+   - Package manager (npm, pnpm, bun)?
+   - Testing strategy for agents
+
+Please research the Claude Agent SDK capabilities and design a comprehensive architecture document answering all these questions. Focus on practical, buildable decisions — not theoretical. Consider that this is a solo founder who needs things to actually work reliably.
+
+The output should be a detailed architecture plan with clear decisions, not a list of options. Make opinionated recommendations.
+Web Fetchhttps://github.com/anthropics/anthropic-sdk-python/blob/main/README.md
+OUT
+Request failed with status code 429
+Web Fetchhttps://www.npmjs.com/package/@anthropic-ai/agent-sdk
+OUT
+Request failed with status code 403
+Web Fetchhttps://github.com/anthropics/agent-sdk
+OUT
+Request failed with status code 404
+you gave me the entire plan before we closed down the other folder - lol.
+Web Fetchhttps://docs.anthropic.com/en/docs/build-with-claude/agentic-tool-use
+OUT
+<tool_use_error>Cancelled: parallel tool call WebFetch errored</tool_use_error>
+Web Fetchhttps://pypi.org/project/anthropic-agent-sdk/
+Fetched from https://pypi.org/project/anthropic-agent-sdk/
+Web Fetchhttps://www.anthropic.com/engineering/building-effective-agents
+Fetched from https://www.anthropic.com/engineering/building-effective-agents
+Web Fetchhttps://railway.com/pricing
+Fetched from https://railway.com/pricing
+Web Fetchhttps://modelcontextprotocol.io/introduction
+Fetched from https://modelcontextprotocol.io/introduction
+Web Fetchhttps://modelcontextprotocol.io/docs/learn/architecture
+Fetched from https://modelcontextprotocol.io/docs/learn/architecture
+Read c:\DevProjects\solosolutions-agents\solosolutions-agent-workforce.html (lines 301-500)
+Ha! So I literally planned this whole thing out for you last session, saved nothing, and just spent 5 minutes re-deriving the same architecture. Classic.
+
+Well — the good news is the plan is solid and consistent (I came to the same conclusions twice, so that's a sign the architecture is right). Let me save this properly now so we never have this problem again.
+
+Write C:\Users\seanp\.claude\projects\c--DevProjects-solosolutions-agents\memory\architecture.md
+59 lines
+# Architecture Decisions (Finalized)
+
+## Runtime
+- **Hybrid cron-triggered polling** (not long-running daemons, not webhooks)
+- Triage polls Gmail every 2 min, other agents on daily/hourly schedules
+- **Hosting: Railway** ($5/mo Hobby plan) — not Vercel (timeout limits)
+- Upgrade path: Gmail push notifications via Cloud Pub/Sub when volume warrants
+
+## Claude Agent SDK
+- Uses `@anthropic-ai/sdk` with `toolRunner` API + MCP helpers (`mcpTools`)
+- Each agent: `index.ts` (entry), `prompt.ts`, `tools.ts`, `types.ts`
+- **Model: claude-sonnet** across all agents initially (upgrade to Opus only if quality issues)
+- Custom tools defined with `betaZodTool` + Zod schemas
+
+## Orchestrator
+- NOT an AI agent — it's a **scheduler/dispatcher** (node-cron)
+- Calls agent `run()` functions, catches errors, logs results
+- Agent-to-agent: direct function invocation (no message queues)
+
+## State Management
+- **Dedicated `solosolutions_ops` Supabase project** (separate from vertical DBs)
+- Tables: `support_tickets`, `ticket_messages`, `agent_runs`, `knowledge_base`, `gmail_sync_state`
+- pgvector enabled for KB semantic search
+
+## Gmail Integration
+- Gmail API polling with `historyId`-based incremental sync
+- Single Google Workspace service account with domain-wide delegation
+- Custom tool wrapping `googleapis` npm package (not MCP — no standard Gmail MCP server)
+- Email threading via `threadId` + `In-Reply-To`/`References` headers
+
+## Knowledge Base (Tier 1)
+- Supabase pgvector in ops DB
+- Two-tier retrieval: category match first, semantic search fallback
+- Resolved tickets feed back into KB (Claude extracts generalizable Q&A pairs)
+
+## Credentials
+- Environment variables on Railway, `.env.example` for docs
+- Vertical Supabase creds referenced in YAML configs as `${ENV_VAR}` placeholders
+
+## Monitoring & Logging
+- `pino` structured JSON logging → Railway captures stdout
+- `agent_runs` table for audit trail
+- Morning digest email via Resend (7 AM ET daily)
+- Immediate error alerts for critical failures
+
+## Project Setup
+- **TypeScript monorepo with pnpm workspaces**
+- Vitest for testing
+- No CI/CD initially — deploy via git push to Railway
+
+## Package Dependencies
+@anthropic-ai/sdk, @modelcontextprotocol/sdk, googleapis, @supabase/supabase-js, resend, pino, node-cron, zod, yaml, uuid, dotenv, typescript, vitest, tsx, msw
+
+## Build Sequence (Priority 1)
+1. Week 1: Foundation (monorepo, shared packages, ops DB, Gmail tool, Railway)
+2. Week 2: Triage Agent (classification, orchestrator, cron, deploy)
+3. Week 3: Tier 1 Responder + Knowledge Base (FAQ seeding, pgvector, response gen, escalation)
+4. Week 4: Polish (morning digest, error alerting, e2e testing, prompt tuning)
+Edit C:\Users\seanp\.claude\projects\c--DevProjects-solosolutions-agents\memory\MEMORY.md
+Added 9 lines
+Alright — memories are locked in this time. Won't be re-deriving the same plan a third time.
+
+So we're at the same place we were when we closed out last session: architecture is decided, and the next move is Week 1 foundation — scaffolding the monorepo, shared packages, ops DB schema, and Gmail tooling. Want to start building?
+
+Yes, let's start and let's keep it clear to me.  I want to view these agents as part of my team, as we outlined in the agents documnet.  So I want us to be very clear onthe agent, their role, purpose, etc... and what team that sit on, understand?  Even if we name each agent something friendly for each department (Spin UP, marketing and support).  Each team member needs to be clear on what they do and who they are.  Just like a real team I would work with.
+Love that mindset. Before we write a line of code, let's build the team roster. These agents should feel like people you'd introduce in a standup — "This is Maya, she handles triage on the support team."
+
+Let me draft the full roster. Each agent gets:
+
+Name (memorable, human)
+Title (what they'd have on a business card)
+Team (Spinup, Marketing, Support)
+One-liner (what they'd say if you asked "what do you do here?")
+Here's my proposal — push back on anything that doesn't feel right:
+
+Support Team (7 agents) — First to build
+Name	Title	One-Liner
+Riley	Support Triage Specialist	"I read every inbound email, figure out what it's about, how urgent it is, and get it to the right person."
+Jordan	Tier 1 Support Rep	"I handle the everyday questions — setup help, how-tos, billing basics. If I'm confident, I reply on the spot."
+Casey	Technical Investigator	"When something's broken, I dig into the logs before anyone panics. Usually I can tell you what happened in minutes."
+Morgan	Onboarding Coach	"I watch new signups and nudge them if they stall. No logo uploaded by day 3? They're hearing from me."
+Sage	Retention Specialist	"I spot the warning signs — no logins, no intakes, failed payment — and re-engage before they ghost."
+Quinn	Feedback Analyst	"After every resolved ticket, I follow up. I turn patterns in feedback into a ranked feature backlog."
+Avery	Escalation Coordinator	"When it's beyond self-serve, I package everything up clean so you can respond in minutes, not hours."
+Marketing Team (8 agents)
+Name	Title	One-Liner
+Harper	Content Writer	"I write the blog posts — SEO-optimized, profession-specific, 4 per month per vertical."
+Ellis	Social Media Manager	"I create and schedule posts for Facebook, Instagram, and LinkedIn — wherever the profession hangs out."
+Reese	Ad Creative Director	"I write the ad copy — headlines, descriptions, A/B variants. I refresh monthly so nothing goes stale."
+Blake	Ad Campaign Manager	"I set up the campaigns, watch the numbers daily, pause the losers, and scale the winners."
+Rowan	SEO Analyst	"I track your keyword rankings, find content gaps, and flag when competitors start outranking you."
+Finley	Review Solicitor	"After someone's been a happy customer for 2 weeks, I ask them to leave a review. Politely."
+Cameron	Analytics Lead	"I pull the numbers from everywhere — ads, Stripe, Supabase — and give you one clean weekly report."
+Drew	Competitive Intelligence	"I watch what competitors are doing — pricing changes, new features, new entrants — so you're never surprised."
+Spinup Team (6 agents)
+Name	Title	One-Liner
+Skyler	Schema Architect	"Tell me the profession and I'll research it, design the full intake schema, validation rules, bilingual labels — everything."
+Emery	Copy Strategist	"I write every word the customer sees — landing page, emails, FAQ, onboarding, error messages. All of it."
+Rory	Codebase Engineer	"I clone the template repo, swap out everything profession-specific, and hand you a clean, buildable codebase."
+Lennox	Infrastructure Engineer	"Supabase project, database migrations, Vercel deployment, DNS — I wire it all up and hand you the keys."
+Kai	Voice Systems Engineer	"I create the Vapi voice assistant, configure the persona, set up the webhook, and provision the phone number."
+Dakota	QA Engineer	"I run the full smoke test — create an account, complete an intake, check the database, verify emails sent. If it passes, it's live."
+What do you think? Do these names and personalities land right? Once you're happy with the roster, I'll lock it into memory and we'll start scaffolding with these identities baked into the codebase — directory names, system prompts, logging, and that morning digest email where they report what they did overnight.
+
+Yes, I like the names and the titles and one liners.  Let's get this team moving.  You are ultimately their boss and I'm ultimately your boss - lol
+Ha — I like that org chart. You're the CEO, I'm the CTO, and these 21 agents report to me. Let me get the team on the books.
+
+Write C:\Users\seanp\.claude\projects\c--DevProjects-solosolutions-agents\memory\team-roster.md
+66 lines
+# Agent Team Roster
+
+## Org Chart
+- **Sean** — Founder & CEO
+- **Claude** — Chief Architect / CTO
+- **21 Agents** — organized into 3 teams below
+
+## Support Team (7 agents) — Priority 1
+
+| Name | Title | One-Liner |
+|------|-------|-----------|
+| Riley | Support Triage Specialist | "I read every inbound email, figure out what it's about, how urgent it is, and get it to the right person." |
+| Jordan | Tier 1 Support Rep | "I handle the everyday questions — setup help, how-tos, billing basics. If I'm confident, I reply on the spot." |
+| Casey | Technical Investigator | "When something's broken, I dig into the logs before anyone panics. Usually I can tell you what happened in minutes." |
+| Morgan | Onboarding Coach | "I watch new signups and nudge them if they stall. No logo uploaded by day 3? They're hearing from me." |
+| Sage | Retention Specialist | "I spot the warning signs — no logins, no intakes, failed payment — and re-engage before they ghost." |
+| Quinn | Feedback Analyst | "After every resolved ticket, I follow up. I turn patterns in feedback into a ranked feature backlog." |
+| Avery | Escalation Coordinator | "When it's beyond self-serve, I package everything up clean so you can respond in minutes, not hours." |
+
+## Marketing Team (8 agents) — Priority 2
+
+| Name | Title | One-Liner |
+|------|-------|-----------|
+| Harper | Content Writer | "I write the blog posts — SEO-optimized, profession-specific, 4 per month per vertical." |
+| Ellis | Social Media Manager | "I create and schedule posts for Facebook, Instagram, and LinkedIn — wherever the profession hangs out." |
+| Reese | Ad Creative Director | "I write the ad copy — headlines, descriptions, A/B variants. I refresh monthly so nothing goes stale." |
+| Blake | Ad Campaign Manager | "I set up the campaigns, watch the numbers daily, pause the losers, and scale the winners." |
+| Rowan | SEO Analyst | "I track your keyword rankings, find content gaps, and flag when competitors start outranking you." |
+| Finley | Review Solicitor | "After someone's been a happy customer for 2 weeks, I ask them to leave a review. Politely." |
+| Cameron | Analytics Lead | "I pull the numbers from everywhere — ads, Stripe, Supabase — and give you one clean weekly report." |
+| Drew | Competitive Intelligence | "I watch what competitors are doing — pricing changes, new features, new entrants — so you're never surprised." |
+
+## Spinup Team (6 agents) — Priority 3
+
+| Name | Title | One-Liner |
+|------|-------|-----------|
+| Skyler | Schema Architect | "Tell me the profession and I'll research it, design the full intake schema, validation rules, bilingual labels — everything." |
+| Emery | Copy Strategist | "I write every word the customer sees — landing page, emails, FAQ, onboarding, error messages. All of it." |
+| Rory | Codebase Engineer | "I clone the template repo, swap out everything profession-specific, and hand you a clean, buildable codebase." |
+| Lennox | Infrastructure Engineer | "Supabase project, database migrations, Vercel deployment, DNS — I wire it all up and hand you the keys." |
+| Kai | Voice Systems Engineer | "I create the Vapi voice assistant, configure the persona, set up the webhook, and provision the phone number." |
+| Dakota | QA Engineer | "I run the full smoke test — create an account, complete an intake, check the database, verify emails sent. If it passes, it's live." |
+
+## Name → Directory Mapping
+- Riley → agents/support/triage/
+- Jordan → agents/support/tier1-responder/
+- Casey → agents/support/bug-detective/
+- Morgan → agents/support/onboarding-coach/
+- Sage → agents/support/churn-prevention/
+- Quinn → agents/support/feedback-collector/
+- Avery → agents/support/escalation/
+- Harper → agents/marketing/content-writer/
+- Ellis → agents/marketing/social-media/
+- Reese → agents/marketing/ad-creative/
+- Blake → agents/marketing/ad-manager/
+- Rowan → agents/marketing/seo/
+- Finley → agents/marketing/review-solicitor/
+- Cameron → agents/marketing/analytics/
+- Drew → agents/marketing/competitor-watch/
+- Skyler → agents/spinup/schema-architect/
+- Emery → agents/spinup/copy-agent/
+- Rory → agents/spinup/codebase-cloner/
+- Lennox → agents/spinup/infra-agent/
+- Kai → agents/spinup/vapi-agent/
+- Dakota → agents/spinup/qa-agent/
+Good — roster is locked. Now let's scaffold the monorepo and get the foundation in place. Starting with the project structure, then we'll bring Riley and Jordan online first.
+
+Bash Check if pnpm is installed
+IN
+cd "c:/DevProjects/solosolutions-agents" && pnpm --version 2>/dev/null || npm --version 2>/dev/null
+
+OUT
+11.6.1
+Bash Check Node version
+IN
+node --version 2>/dev/null
+
+OUT
+v24.11.0
+pnpm 11.6.1 and Node 24 — we're set. Let me scaffold the full monorepo structure.
+
+Bash Create full directory structure
+IN
+cd "c:/DevProjects/solosolutions-agents" && mkdir -p packages/shared/src packages/mcp-clients/src agents/support/triage/src agents/support/tier1-responder/src agents/support/bug-detective/src agents/support/onboarding-coach/src agents/support/churn-prevention/src agents/support/feedback-collector/src agents/support/escalation/src agents/marketing/content-writer/src agents/marketing/social-media/src agents/marketing/ad-creative/src agents/marketing/ad-manager/src agents/marketing/seo/src agents/marketing/review-solicitor/src agents/marketing/analytics/src agents/marketing/competitor-watch/src agents/spinup/schema-architect/src agents/spinup/copy-agent/src agents/spinup/codebase-cloner/src agents/spinup/infra-agent/src agents/spinup/vapi-agent/src agents/spinup/qa-agent/src orchestrator/src configs scripts
+
+OUT
+0
+Write c:\DevProjects\solosolutions-agents\pnpm-workspace.yaml
+5 lines
+packages:
+  - 'packages/*'
+  - 'agents/**'
+  - 'orchestrator'
+Write c:\DevProjects\solosolutions-agents\package.json
+16 lines
+{
+  "name": "solosolutions-agents",
+  "version": "0.1.0",
+  "private": true,
+  "description": "SoloSolutionsAI Agent Workforce — 21 autonomous agents across Spinup, Marketing, and Support teams",
+  "scripts": {
+    "dev": "tsx orchestrator/src/index.ts",
+    "build": "tsc --build",
+    "test": "vitest",
+    "lint": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
+Write c:\DevProjects\solosolutions-agents\tsconfig.base.json
+18 lines
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "Node16",
+    "moduleResolution": "Node16",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "rootDir": "./src"
+  }
+}
+Write c:\DevProjects\solosolutions-agents\.gitignore
+6 lines
+node_modules/
+dist/
+.env
+.env.local
+*.log
+Write c:\DevProjects\solosolutions-agents\.env.example
+33 lines
+# ==========================================
+# SoloSolutionsAI Agent Workforce
+# Environment Variables
+# ==========================================
+
+# Claude API (powers all 21 agents)
+ANTHROPIC_API_KEY=
+
+# Google Workspace (Gmail — Riley reads support emails, Jordan sends replies)
+GOOGLE_SERVICE_ACCOUNT_JSON=          # Base64-encoded service account key JSON
+GOOGLE_DELEGATED_USER=                # e.g. admin@solosolutionsai.com
+
+# Supabase — Operations Database (agent state, tickets, knowledge base)
+SUPABASE_OPS_URL=
+SUPABASE_OPS_SERVICE_KEY=
+
+# Supabase — SoloLawyerAI (vertical database)
+SUPABASE_SOLOLAWYER_URL=
+SUPABASE_SOLOLAWYER_SERVICE_KEY=
+
+# Supabase — SoloVetAI (vertical database)
+# SUPABASE_SOLOVET_URL=
+# SUPABASE_SOLOVET_SERVICE_KEY=
+
+# Resend (transactional emails — Morgan's onboarding nudges, Sage's re-engagement)
+RESEND_API_KEY=
+
+# Founder notifications (escalations from Avery, morning digest)
+NOTIFICATION_EMAIL=
+
+# Logging
+LOG_LEVEL=info
+Now the shared package — the foundation every agent depends on:
+
+Write c:\DevProjects\solosolutions-agents\packages\shared\package.json
+27 lines
+{
+  "name": "@solo/shared",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@supabase/supabase-js": "^2.49.4",
+    "googleapis": "^148.0.0",
+    "resend": "^4.1.2",
+    "pino": "^9.6.0",
+    "zod": "^3.24.2",
+    "yaml": "^2.7.0",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2",
+    "@types/node": "^22.13.10"
+  }
+}
+Write c:\DevProjects\solosolutions-agents\packages\shared\tsconfig.json
+9 lines
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src"
+  },
+  "include": ["src"]
+}
+Now the core shared modules — types, logger, clients, and config:
+
+Write c:\DevProjects\solosolutions-agents\packages\shared\src\types.ts
+201 lines
+// ==========================================
+// SoloSolutionsAI — Shared Types
+// ==========================================
+
+/** Support ticket priority levels */
+export type TicketPriority = 'urgent' | 'normal' | 'low';
+
+/** Support ticket categories */
+export type TicketCategory = 'billing' | 'technical' | 'onboarding' | 'feature_request' | 'general';
+
+/** Ticket lifecycle status */
+export type TicketStatus = 'new' | 'in_progress' | 'awaiting_response' | 'resolved' | 'escalated';
+
+/** Which agent is handling the ticket */
+export type AssignedAgent = 'riley' | 'jordan' | 'casey' | 'morgan' | 'avery';
+
+/** Agent names across all teams */
+export type AgentName =
+  // Support Team
+  | 'riley'    // Triage
+  | 'jordan'   // Tier 1 Responder
+  | 'casey'    // Bug Detective
+  | 'morgan'   // Onboarding Coach
+  | 'sage'     // Retention Specialist
+  | 'quinn'    // Feedback Analyst
+  | 'avery'    // Escalation Coordinator
+  // Marketing Team
+  | 'harper'   // Content Writer
+  | 'ellis'    // Social Media
+  | 'reese'    // Ad Creative
+  | 'blake'    // Ad Campaign Manager
+  | 'rowan'    // SEO Analyst
+  | 'finley'   // Review Solicitor
+  | 'cameron'  // Analytics Lead
+  | 'drew'     // Competitive Intelligence
+  // Spinup Team
+  | 'skyler'   // Schema Architect
+  | 'emery'    // Copy Strategist
+  | 'rory'     // Codebase Engineer
+  | 'lennox'   // Infrastructure Engineer
+  | 'kai'      // Voice Systems Engineer
+  | 'dakota';  // QA Engineer
+
+/** Team names */
+export type TeamName = 'support' | 'marketing' | 'spinup';
+
+/** Vertical identifiers */
+export type VerticalId = 'sololawyer' | 'solovet' | 'solorealtor' | 'solotherapist' | 'soloaccountant';
+
+/** Agent run trigger types */
+export type RunTrigger = 'cron' | 'direct_invoke' | 'webhook';
+
+/** Agent run status */
+export type RunStatus = 'running' | 'success' | 'error';
+
+// ==========================================
+// Database row types (match solosolutions_ops schema)
+// ==========================================
+
+export interface SupportTicket {
+  id: string;
+  vertical: VerticalId;
+  source_email: string;
+  source_message_id: string;
+  thread_id: string;
+  subject: string | null;
+  body_preview: string | null;
+  priority: TicketPriority;
+  category: TicketCategory;
+  status: TicketStatus;
+  assigned_agent: AssignedAgent | null;
+  customer_id: string | null;
+  resolution_summary: string | null;
+  created_at: string;
+  updated_at: string;
+  resolved_at: string | null;
+  escalated_at: string | null;
+}
+
+export interface TicketMessage {
+  id: string;
+  ticket_id: string;
+  direction: 'inbound' | 'outbound';
+  gmail_message_id: string | null;
+  from_email: string;
+  to_email: string;
+  subject: string | null;
+  body: string;
+  sent_at: string;
+  created_at: string;
+}
+
+export interface AgentRun {
+  id: string;
+  agent_name: AgentName;
+  vertical: VerticalId | null;
+  trigger: RunTrigger;
+  started_at: string;
+  completed_at: string | null;
+  status: RunStatus;
+  input_summary: string | null;
+  output_summary: string | null;
+  error_message: string | null;
+  tokens_used: number | null;
+  cost_usd: number | null;
+  metadata: Record<string, unknown> | null;
+}
+
+export interface KnowledgeBaseEntry {
+  id: string;
+  vertical: VerticalId | 'global';
+  category: 'faq' | 'help_doc' | 'resolved_ticket';
+  title: string;
+  content: string;
+  tags: string[];
+  source: 'manual' | 'resolved_ticket' | 'help_center';
+  source_ticket_id: string | null;
+  embedding: number[] | null;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface GmailSyncState {
+  id: string;
+  email_address: string;
+  vertical: VerticalId;
+  last_history_id: string;
+  last_synced_at: string;
+}
+
+// ==========================================
+// Vertical configuration
+// ==========================================
+
+export interface VerticalConfig {
+  vertical: VerticalId;
+  display_name: string;
+  domain: string;
+  support_email: string;
+  supabase: {
+    url: string;
+    service_key: string;
+  };
+  branding: {
+    company_name: string;
+    tagline: string;
+    support_signature: string;
+  };
+}
+
+// ==========================================
+// Agent team metadata (for logging, digest, etc.)
+// ==========================================
+
+export interface AgentProfile {
+  name: AgentName;
+  display_name: string;
+  title: string;
+  team: TeamName;
+  one_liner: string;
+}
+
+export const TEAM_ROSTER: AgentProfile[] = [
+  // Support Team
+  { name: 'riley',   display_name: 'Riley',   title: 'Support Triage Specialist', team: 'support',   one_liner: 'I read every inbound email, figure out what it\'s about, how urgent it is, and get it to the right person.' },
+  { name: 'jordan',  display_name: 'Jordan',  title: 'Tier 1 Support Rep',        team: 'support',   one_liner: 'I handle the everyday questions — setup help, how-tos, billing basics. If I\'m confident, I reply on the spot.' },
+  { name: 'casey',   display_name: 'Casey',   title: 'Technical Investigator',    team: 'support',   one_liner: 'When something\'s broken, I dig into the logs before anyone panics. Usually I can tell you what happened in minutes.' },
+  { name: 'morgan',  display_name: 'Morgan',  title: 'Onboarding Coach',          team: 'support',   one_liner: 'I watch new signups and nudge them if they stall. No logo uploaded by day 3? They\'re hearing from me.' },
+  { name: 'sage',    display_name: 'Sage',    title: 'Retention Specialist',      team: 'support',   one_liner: 'I spot the warning signs — no logins, no intakes, failed payment — and re-engage before they ghost.' },
+  { name: 'quinn',   display_name: 'Quinn',   title: 'Feedback Analyst',          team: 'support',   one_liner: 'After every resolved ticket, I follow up. I turn patterns in feedback into a ranked feature backlog.' },
+  { name: 'avery',   display_name: 'Avery',   title: 'Escalation Coordinator',    team: 'support',   one_liner: 'When it\'s beyond self-serve, I package everything up clean so you can respond in minutes, not hours.' },
+  // Marketing Team
+  { name: 'harper',  display_name: 'Harper',  title: 'Content Writer',            team: 'marketing', one_liner: 'I write the blog posts — SEO-optimized, profession-specific, 4 per month per vertical.' },
+  { name: 'ellis',   display_name: 'Ellis',   title: 'Social Media Manager',      team: 'marketing', one_liner: 'I create and schedule posts for Facebook, Instagram, and LinkedIn — wherever the profession hangs out.' },
+  { name: 'reese',   display_name: 'Reese',   title: 'Ad Creative Director',      team: 'marketing', one_liner: 'I write the ad copy — headlines, descriptions, A/B variants. I refresh monthly so nothing goes stale.' },
+  { name: 'blake',   display_name: 'Blake',   title: 'Ad Campaign Manager',       team: 'marketing', one_liner: 'I set up the campaigns, watch the numbers daily, pause the losers, and scale the winners.' },
+  { name: 'rowan',   display_name: 'Rowan',   title: 'SEO Analyst',               team: 'marketing', one_liner: 'I track your keyword rankings, find content gaps, and flag when competitors start outranking you.' },
+  { name: 'finley',  display_name: 'Finley',  title: 'Review Solicitor',          team: 'marketing', one_liner: 'After someone\'s been a happy customer for 2 weeks, I ask them to leave a review. Politely.' },
+  { name: 'cameron', display_name: 'Cameron', title: 'Analytics Lead',            team: 'marketing', one_liner: 'I pull the numbers from everywhere — ads, Stripe, Supabase — and give you one clean weekly report.' },
+  { name: 'drew',    display_name: 'Drew',    title: 'Competitive Intelligence',  team: 'marketing', one_liner: 'I watch what competitors are doing — pricing changes, new features, new entrants — so you\'re never surprised.' },
+  // Spinup Team
+  { name: 'skyler',  display_name: 'Skyler',  title: 'Schema Architect',          team: 'spinup',    one_liner: 'Tell me the profession and I\'ll research it, design the full intake schema, validation rules, bilingual labels — everything.' },
+  { name: 'emery',   display_name: 'Emery',   title: 'Copy Strategist',           team: 'spinup',    one_liner: 'I write every word the customer sees — landing page, emails, FAQ, onboarding, error messages. All of it.' },
+  { name: 'rory',    display_name: 'Rory',    title: 'Codebase Engineer',         team: 'spinup',    one_liner: 'I clone the template repo, swap out everything profession-specific, and hand you a clean, buildable codebase.' },
+  { name: 'lennox',  display_name: 'Lennox',  title: 'Infrastructure Engineer',   team: 'spinup',    one_liner: 'Supabase project, database migrations, Vercel deployment, DNS — I wire it all up and hand you the keys.' },
+  { name: 'kai',     display_name: 'Kai',     title: 'Voice Systems Engineer',    team: 'spinup',    one_liner: 'I create the Vapi voice assistant, configure the persona, set up the webhook, and provision the phone number.' },
+  { name: 'dakota',  display_name: 'Dakota',  title: 'QA Engineer',               team: 'spinup',    one_liner: 'I run the full smoke test — create an account, complete an intake, check the database, verify emails sent. If it passes, it\'s live.' },
+];
+
+/** Look up an agent's profile by name */
+export function getAgent(name: AgentName): AgentProfile {
+  const agent = TEAM_ROSTER.find(a => a.name === name);
+  if (!agent) throw new Error(`Unknown agent: ${name}`);
+  return agent;
+}
+
+/** Get all agents on a team */
+export function getTeam(team: TeamName): AgentProfile[] {
+  return TEAM_ROSTER.filter(a => a.team === team);
+}
+Write c:\DevProjects\solosolutions-agents\packages\shared\src\logger.ts
+23 lines
+import pino from 'pino';
+import type { AgentName } from './types.js';
+
+export const logger = pino({
+  level: process.env.LOG_LEVEL || 'info',
+  formatters: {
+    level: (label) => ({ level: label }),
+  },
+  timestamp: pino.stdTimeFunctions.isoTime,
+});
+
+/**
+ * Create a child logger for a specific agent.
+ * Every log line includes the agent name and run ID for traceability.
+ *
+ * Usage:
+ *   const log = agentLogger('riley', runId);
+ *   log.info({ emailCount: 3 }, 'Processing new emails');
+ */
+export function agentLogger(agent: AgentName, runId: string) {
+  return logger.child({ agent, runId });
+}
+Write c:\DevProjects\solosolutions-agents\packages\shared\src\anthropic.ts
+18 lines
+import Anthropic from '@anthropic-ai/sdk';
+
+let client: Anthropic | null = null;
+
+/**
+ * Shared Anthropic client — singleton so all agents reuse one instance.
+ * Reads ANTHROPIC_API_KEY from environment.
+ */
+export function getAnthropicClient(): Anthropic {
+  if (!client) {
+    client = new Anthropic();
+  }
+  return client;
+}
+
+/** Default model for all agents. Upgrade individual agents only if quality issues emerge. */
+export const DEFAULT_MODEL = 'claude-sonnet-4-20250514';
+Write c:\DevProjects\solosolutions-agents\packages\shared\src\supabase.ts
+38 lines
+import { createClient, type SupabaseClient } from '@supabase/supabase-js';
+
+const clients = new Map<string, SupabaseClient>();
+
+/**
+ * Get the operations database client (solosolutions_ops).
+ * Used by all agents for tickets, runs, knowledge base, etc.
+ */
+export function getOpsClient(): SupabaseClient {
+  const key = 'ops';
+  if (!clients.has(key)) {
+    const url = process.env.SUPABASE_OPS_URL;
+    const serviceKey = process.env.SUPABASE_OPS_SERVICE_KEY;
+    if (!url || !serviceKey) {
+      throw new Error('Missing SUPABASE_OPS_URL or SUPABASE_OPS_SERVICE_KEY');
+    }
+    clients.set(key, createClient(url, serviceKey));
+  }
+  return clients.get(key)!;
+}
+
+/**
+ * Get a vertical's Supabase client (e.g. SoloLawyerAI's database).
+ * Used by agents that need to query customer data (Casey, Morgan, Sage).
+ */
+export function getVerticalClient(vertical: string): SupabaseClient {
+  if (!clients.has(vertical)) {
+    const envPrefix = `SUPABASE_${vertical.toUpperCase()}`;
+    const url = process.env[`${envPrefix}_URL`];
+    const serviceKey = process.env[`${envPrefix}_SERVICE_KEY`];
+    if (!url || !serviceKey) {
+      throw new Error(`Missing ${envPrefix}_URL or ${envPrefix}_SERVICE_KEY`);
+    }
+    clients.set(vertical, createClient(url, serviceKey));
+  }
+  return clients.get(vertical)!;
+}
+Write c:\DevProjects\solosolutions-agents\packages\shared\src\config.ts
+50 lines
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
+import { parse } from 'yaml';
+import type { VerticalConfig, VerticalId } from './types.js';
+
+const configs = new Map<string, VerticalConfig>();
+
+/**
+ * Load a vertical's config from configs/{vertical}.yaml.
+ * Resolves ${ENV_VAR} placeholders from process.env.
+ */
+export function loadVerticalConfig(vertical: VerticalId): VerticalConfig {
+  if (configs.has(vertical)) {
+    return configs.get(vertical)!;
+  }
+
+  const configPath = join(process.cwd(), 'configs', `${vertical}.yaml`);
+  const raw = readFileSync(configPath, 'utf-8');
+
+  // Resolve ${ENV_VAR} placeholders
+  const resolved = raw.replace(/\$\{(\w+)\}/g, (_, envVar) => {
+    const value = process.env[envVar];
+    if (!value) {
+      throw new Error(`Missing env var ${envVar} referenced in ${configPath}`);
+    }
+    return value;
+  });
+
+  const config = parse(resolved) as VerticalConfig;
+  configs.set(vertical, config);
+  return config;
+}
+
+/**
+ * Get all configured verticals by scanning the configs/ directory.
+ */
+export function getActiveVerticals(): VerticalId[] {
+  // For now, return the verticals we know about.
+  // Later this can scan the configs/ directory dynamically.
+  const all: VerticalId[] = ['sololawyer', 'solovet', 'solorealtor', 'solotherapist', 'soloaccountant'];
+  return all.filter(v => {
+    try {
+      loadVerticalConfig(v);
+      return true;
+    } catch {
+      return false;
+    }
+  });
+}
+Write c:\DevProjects\solosolutions-agents\packages\shared\src\index.ts
+9 lines
+// @solo/shared — shared utilities for the SoloSolutionsAI agent workforce
+
+export { getAnthropicClient, DEFAULT_MODEL } from './anthropic.js';
+export { getOpsClient, getVerticalClient } from './supabase.js';
+export { logger, agentLogger } from './logger.js';
+export { loadVerticalConfig, getActiveVerticals } from './config.js';
+export { TEAM_ROSTER, getAgent, getTeam } from './types.js';
+export type * from './types.js';
+Now the first vertical config and the orchestrator:
+
+Write c:\DevProjects\solosolutions-agents\configs\sololawyer.yaml
+14 lines
+vertical: sololawyer
+display_name: SoloLawyerAI
+domain: sololawyerai.com
+support_email: support@sololawyerai.com
+
+supabase:
+  url: ${SUPABASE_SOLOLAWYER_URL}
+  service_key: ${SUPABASE_SOLOLAWYER_SERVICE_KEY}
+
+branding:
+  company_name: SoloLawyerAI
+  tagline: "AI-powered intake for solo attorneys"
+  support_signature: "The SoloLawyerAI Support Team"
+Write c:\DevProjects\solosolutions-agents\orchestrator\package.json
+22 lines
+{
+  "name": "@solo/orchestrator",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts"
+  },
+  "dependencies": {
+    "@solo/shared": "workspace:*",
+    "node-cron": "^3.0.3",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2",
+    "@types/node": "^22.13.10",
+    "@types/uuid": "^10.0.0",
+    "tsx": "^4.19.3"
+  }
+}
+Write c:\DevProjects\solosolutions-agents\orchestrator\tsconfig.json
+12 lines
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src"
+  },
+  "include": ["src"],
+  "references": [
+    { "path": "../packages/shared" }
+  ]
+}
+Write c:\DevProjects\solosolutions-agents\orchestrator\src\index.ts
+10 lines
+import 'dotenv/config';
+import { logger } from '@solo/shared';
+import { startScheduler } from './scheduler.js';
+
+logger.info('===========================================');
+logger.info('SoloSolutionsAI Agent Workforce — Starting');
+logger.info('===========================================');
+
+startScheduler();
+Write c:\DevProjects\solosolutions-agents\orchestrator\src\scheduler.ts
+35 lines
+import cron from 'node-cron';
+import { logger } from '@solo/shared';
+import { runAgent } from './runner.js';
+
+/**
+ * The scheduler is the heartbeat of the agent workforce.
+ * It fires cron jobs that trigger each agent's run() function.
+ *
+ * Currently active:
+ *   - Riley (Triage): every 2 minutes — checks Gmail for new support emails
+ *
+ * Future additions (uncomment as agents come online):
+ *   - Morgan (Onboarding Coach): daily at 9 AM ET
+ *   - Sage (Churn Prevention): daily at 10 AM ET
+ *   - Quinn (Feedback Collector): hourly
+ *   - Morning digest: daily at 7 AM ET
+ */
+export function startScheduler() {
+  logger.info('Scheduler starting — registering cron jobs');
+
+  // ── Riley (Triage) — every 2 minutes ──
+  cron.schedule('*/2 * * * *', () => {
+    runAgent('riley', 'cron');
+  });
+  logger.info('  ✓ Riley (Triage) — every 2 minutes');
+
+  // ── Future agents ──
+  // cron.schedule('0 9 * * *', () => runAgent('morgan', 'cron'));   // 9 AM daily
+  // cron.schedule('0 10 * * *', () => runAgent('sage', 'cron'));    // 10 AM daily
+  // cron.schedule('0 * * * *', () => runAgent('quinn', 'cron'));    // Hourly
+  // cron.schedule('0 7 * * *', () => buildMorningDigest());         // 7 AM daily
+
+  logger.info('Scheduler running. Waiting for triggers...');
+}
+Write c:\DevProjects\solosolutions-agents\orchestrator\src\runner.ts
+121 lines
+import { v4 as uuid } from 'uuid';
+import { agentLogger, getAgent, getOpsClient } from '@solo/shared';
+import type { AgentName, RunTrigger, RunStatus } from '@solo/shared';
+
+/**
+ * Runs an agent with full lifecycle logging.
+ * Every run is recorded in the agent_runs table for audit and the morning digest.
+ *
+ * Flow:
+ *   1. Log start to agent_runs (status: 'running')
+ *   2. Import and execute the agent's run() function
+ *   3. Update agent_runs with result (status: 'success' or 'error')
+ */
+export async function runAgent(agentName: AgentName, trigger: RunTrigger) {
+  const runId = uuid();
+  const profile = getAgent(agentName);
+  const log = agentLogger(agentName, runId);
+
+  log.info(`${profile.display_name} (${profile.title}) starting — triggered by ${trigger}`);
+
+  const startedAt = new Date().toISOString();
+  let status: RunStatus = 'running';
+
+  // Log the start of the run
+  try {
+    const ops = getOpsClient();
+    await ops.from('agent_runs').insert({
+      id: runId,
+      agent_name: agentName,
+      trigger,
+      started_at: startedAt,
+      status,
+    });
+  } catch (err) {
+    // Don't fail the agent run if logging fails
+    log.warn({ err }, 'Failed to log agent run start to database');
+  }
+
+  try {
+    // Dynamically import the agent's run function
+    const agentModule = await importAgent(agentName);
+    const result = await agentModule.run(runId);
+
+    status = 'success';
+    log.info({ result: result?.summary }, `${profile.display_name} completed successfully`);
+
+    // Update the run record
+    try {
+      const ops = getOpsClient();
+      await ops.from('agent_runs').update({
+        status,
+        completed_at: new Date().toISOString(),
+        output_summary: result?.summary || null,
+        tokens_used: result?.tokensUsed || null,
+      }).eq('id', runId);
+    } catch (err) {
+      log.warn({ err }, 'Failed to update agent run record');
+    }
+  } catch (err) {
+    status = 'error';
+    const errorMessage = err instanceof Error ? err.message : String(err);
+    log.error({ err }, `${profile.display_name} failed: ${errorMessage}`);
+
+    // Update the run record with error
+    try {
+      const ops = getOpsClient();
+      await ops.from('agent_runs').update({
+        status,
+        completed_at: new Date().toISOString(),
+        error_message: errorMessage,
+      }).eq('id', runId);
+    } catch (logErr) {
+      log.warn({ err: logErr }, 'Failed to update agent run error record');
+    }
+  }
+}
+
+/** Agent run result — returned by each agent's run() function */
+export interface AgentRunResult {
+  summary: string;
+  tokensUsed?: number;
+}
+
+/**
+ * Dynamically imports an agent module based on its name.
+ * Maps agent names to their directory paths.
+ */
+async function importAgent(name: AgentName): Promise<{ run: (runId: string) => Promise<AgentRunResult | undefined> }> {
+  const agentPaths: Record<string, string> = {
+    // Support Team
+    riley:   '../agents/support/triage/src/index.js',
+    jordan:  '../agents/support/tier1-responder/src/index.js',
+    casey:   '../agents/support/bug-detective/src/index.js',
+    morgan:  '../agents/support/onboarding-coach/src/index.js',
+    sage:    '../agents/support/churn-prevention/src/index.js',
+    quinn:   '../agents/support/feedback-collector/src/index.js',
+    avery:   '../agents/support/escalation/src/index.js',
+    // Marketing Team
+    harper:  '../agents/marketing/content-writer/src/index.js',
+    ellis:   '../agents/marketing/social-media/src/index.js',
+    reese:   '../agents/marketing/ad-creative/src/index.js',
+    blake:   '../agents/marketing/ad-manager/src/index.js',
+    rowan:   '../agents/marketing/seo/src/index.js',
+    finley:  '../agents/marketing/review-solicitor/src/index.js',
+    cameron: '../agents/marketing/analytics/src/index.js',
+    drew:    '../agents/marketing/competitor-watch/src/index.js',
+    // Spinup Team
+    skyler:  '../agents/spinup/schema-architect/src/index.js',
+    emery:   '../agents/spinup/copy-agent/src/index.js',
+    rory:    '../agents/spinup/codebase-cloner/src/index.js',
+    lennox:  '../agents/spinup/infra-agent/src/index.js',
+    kai:     '../agents/spinup/vapi-agent/src/index.js',
+    dakota:  '../agents/spinup/qa-agent/src/index.js',
+  };
+
+  const path = agentPaths[name];
+  if (!path) throw new Error(`No module path configured for agent: ${name}`);
+
+  return import(path);
+}
+Good — foundation is scaffolded. Now let me set up Riley and Jordan's package configs so we can install dependencies and verify the monorepo builds:
+
+Write c:\DevProjects\solosolutions-agents\agents\support\triage\package.json
+15 lines
+{
+  "name": "@solo/agent-riley",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Riley — Support Triage Specialist. Reads inbound support emails, classifies priority and category, routes to the right team member.",
+  "dependencies": {
+    "@solo/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2",
+    "@types/node": "^22.13.10"
+  }
+}
+Write c:\DevProjects\solosolutions-agents\agents\support\triage\tsconfig.json
+12 lines
+{
+  "extends": "../../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src"
+  },
+  "include": ["src"],
+  "references": [
+    { "path": "../../../packages/shared" }
+  ]
+}
+Write c:\DevProjects\solosolutions-agents\agents\support\triage\src\index.ts
+38 lines
+import { agentLogger } from '@solo/shared';
+import type { AgentRunResult } from '../../../../orchestrator/src/runner.js';
+
+/**
+ * ═══════════════════════════════════════════
+ * RILEY — Support Triage Specialist
+ * ═══════════════════════════════════════════
+ *
+ * "I read every inbound email, figure out what it's about,
+ *  how urgent it is, and get it to the right person."
+ *
+ * Team: Support
+ * Trigger: Every 2 minutes (cron)
+ * Tools: Gmail API (read inbox), Claude (classify), Supabase (write tickets)
+ *
+ * Flow:
+ *   1. Check Gmail for new messages (since last historyId)
+ *   2. For each new email:
+ *      a. Parse sender, subject, body, thread ID
+ *      b. Check if it's part of an existing ticket thread
+ *      c. Classify priority (urgent/normal/low) and category (billing/technical/etc.)
+ *      d. Create or update support_ticket in ops DB
+ *      e. Route: if Tier 1-handleable → invoke Jordan directly
+ *   3. Update gmail_sync_state with new historyId
+ * ═══════════════════════════════════════════
+ */
+export async function run(runId: string): Promise<AgentRunResult> {
+  const log = agentLogger('riley', runId);
+
+  log.info('Checking Gmail for new support emails...');
+
+  // TODO: Implement Gmail polling, classification, and routing
+  // This is the next step after we verify the monorepo builds
+
+  log.info('No new emails to process');
+  return { summary: 'Checked inbox — no new emails' };
+}
+Write c:\DevProjects\solosolutions-agents\agents\support\tier1-responder\package.json
+15 lines
+{
+  "name": "@solo/agent-jordan",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Jordan — Tier 1 Support Rep. Handles everyday support questions autonomously using the knowledge base. Sends branded replies.",
+  "dependencies": {
+    "@solo/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2",
+    "@types/node": "^22.13.10"
+  }
+}
+Write c:\DevProjects\solosolutions-agents\agents\support\tier1-responder\tsconfig.json
+12 lines
+{
+  "extends": "../../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src"
+  },
+  "include": ["src"],
+  "references": [
+    { "path": "../../../packages/shared" }
+  ]
+}
+Write c:\DevProjects\solosolutions-agents\agents\support\tier1-responder\src\index.ts
+36 lines
+import { agentLogger } from '@solo/shared';
+import type { AgentRunResult } from '../../../../orchestrator/src/runner.js';
+
+/**
+ * ═══════════════════════════════════════════
+ * JORDAN — Tier 1 Support Rep
+ * ═══════════════════════════════════════════
+ *
+ * "I handle the everyday questions — setup help, how-tos,
+ *  billing basics. If I'm confident, I reply on the spot."
+ *
+ * Team: Support
+ * Trigger: Invoked by Riley (Triage) when a ticket is classified as Tier 1-handleable
+ * Tools: Knowledge base search, Claude (draft response), Gmail API (send reply)
+ *
+ * Flow:
+ *   1. Receive ticket from Riley (includes email content, classification)
+ *   2. Search knowledge base — category match first, then semantic search
+ *   3. Draft response using Claude with KB context + brand voice
+ *   4. Evaluate confidence:
+ *      - High confidence → send reply via Gmail, mark ticket awaiting_response
+ *      - Low confidence → route to Avery (Escalation), do NOT send
+ *   5. Log response in ticket_messages
+ * ═══════════════════════════════════════════
+ */
+export async function run(runId: string): Promise<AgentRunResult> {
+  const log = agentLogger('jordan', runId);
+
+  log.info('Standing by — waiting for tickets from Riley');
+
+  // TODO: Implement KB search, response drafting, confidence evaluation
+  // Jordan is invoked by Riley, not by cron — this run() is for direct invocation
+
+  return { summary: 'No tickets to handle' };
+}
+Now let's install dependencies and verify the monorepo builds clean:
+
+Bash Install all workspace dependencies
+IN
+cd "c:/DevProjects/solosolutions-agents" && pnpm install 2>&1
+
+OUT
+Exit code 127
+/usr/bin/bash: line 1: pnpm: command not found
+Bash Check npm location
+IN
+which npm && npm --version
+
+OUT
+/c/Program Files/nodejs/npm
+11.6.1
+Bash Try npx pnpm or enable via corepack
+IN
+npx pnpm --version 2>/dev/null || corepack enable && corepack prepare pnpm@latest --activate 2>&1
+
+OUT
+10.31.0
+Preparing pnpm@latest for immediate activation...
+Bash Install all workspace dependencies via npx pnpm
+IN
+cd "c:/DevProjects/solosolutions-agents" && npx pnpm install 2>&1
+
+OUT
+Scope: all 5 workspace projects
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Progress: resolved 46, reused 0, downloaded 20, added 0
+Progress: resolved 144, reused 0, downloaded 109, added 0
+Progress: resolved 150, reused 0, downloaded 120, added 0
+ WARN  1 deprecated subdependencies found: node-domexception@1.0.0
+Packages: +126
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 152, reused 0, downloaded 124, added 0
+Progress: resolved 152, reused 0, downloaded 125, added 125
+Progress: resolved 152, reused 0, downloaded 126, added 126, done
+
+╭ Warning ─────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│   Ignored build scripts: esbuild@0.27.3.                                     │
+│   Run "pnpm approve-builds" to pick which dependencies should be allowed     │
+│   to run scripts.                                                            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+Done in 6.3s using pnpm v10.31.0
+Bash Approve esbuild build scripts
+IN
+cd "c:/DevProjects/solosolutions-agents" && npx pnpm approve-builds 2>&1 << 'EOF'
+y
+EOF
+
+OUT
+Exit code 1
+[?25l[36m?[39m [1mChoose which packages to build (Press <space> to select, <a> to toggle all, <i> to invert selection)[22m [2m...[22m 
+[36m❯[39m ○ esbuild[1A[108G [1B[2K[F[2K[F[2K[1G√ [1mChoose which packages to build (Press <space> to select, <a> to toggle all, <i> to invert selection)[22m [2m·[22m [35mNo items were selected[39m[21D
+
+[?25hError [ERR_USE_AFTER_CLOSE]: readline was closed
+    at Interface.pause (node:internal/readline/interface:564:13)
+    at MultiSelect.off [as stop] (C:\Users\seanp\AppData\Local\npm-cache\_npx\e6e0ed1aca658cae\node_modules\pnpm\dist\pnpm.cjs:123715:12)
+    at Object.onceWrapper (node:events:622:28)
+    at MultiSelect.emit (node:events:520:35)
+    at prompt.emit (C:\Users\seanp\AppData\Local\npm-cache\_npx\e6e0ed1aca658cae\node_modules\pnpm\dist\pnpm.cjs:127375:18)
+    at MultiSelect.close (C:\Users\seanp\AppData\Local\npm-cache\_npx\e6e0ed1aca658cae\node_modules\pnpm\dist\pnpm.cjs:124319:14)
+    at MultiSelect.submit (C:\Users\seanp\AppData\Local\npm-cache\_npx\e6e0ed1aca658cae\node_modules\pnpm\dist\pnpm.cjs:124295:20)
+    at async MultiSelect.keypress (C:\Users\seanp\AppData\Local\npm-cache\_npx\e6e0ed1aca658cae\node_modules\pnpm\dist\pnpm.cjs:124209:18)
+Interactive prompt — can't do that from here. Not a problem, esbuild will work fine without it. Let's verify TypeScript compiles:
+
+Bash Type-check the shared package
+IN
+cd "c:/DevProjects/solosolutions-agents" && npx tsc --project packages/shared/tsconfig.json --noEmit 2>&1
+
+OUT
+Exit code 1
+npm warn exec The following package was not found and will be installed: tsc@2.0.4
+
+[41m                                                                               [0m
+[41m[37m                This is not the tsc command you are looking for                [0m
+[41m                                                                               [0m
+
+To get access to the TypeScript compiler, [34mtsc[0m, from the command line either:
+
+- Use [1mnpm install typescript[0m to first add TypeScript to your project [1mbefore[0m using npx
+- Use [1myarn[0m to avoid accidentally running code from un-installed packages
+Bash Add dev deps to workspace root
+IN
+cd "c:/DevProjects/solosolutions-agents" && npx pnpm add -D typescript tsx vitest @types/node -w 2>&1
+
+OUT
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Progress: resolved 159, reused 0, downloaded 0, added 0
+Progress: resolved 213, reused 0, downloaded 0, added 0
+ WARN  1 deprecated subdependencies found: node-domexception@1.0.0
+Progress: resolved 214, reused 0, downloaded 0, added 0, done
+
+devDependencies:
++ @types/node ^22.19.15
++ tsx ^4.21.0
++ typescript ^5.9.3
++ vitest ^4.0.18
+
+Packages: +39
++++++++++++++++++++++++++++++++++++++++
+╭ Warning ─────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│   Ignored build scripts: esbuild@0.27.3.                                     │
+│   Run "pnpm approve-builds" to pick which dependencies should be allowed     │
+│   to run scripts.                                                            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+Done in 3.1s using pnpm v10.31.0
+Bash Type-check the shared package
+IN
+cd "c:/DevProjects/solosolutions-agents" && ./node_modules/.bin/tsc --project packages/shared/tsconfig.json --noEmit 2>&1
+
+OUT
+0
+Clean compile. Let me check the other packages too:
+
+Bash Type-check the orchestrator
+IN
+cd "c:/DevProjects/solosolutions-agents" && ./node_modules/.bin/tsc --project orchestrator/tsconfig.json --noEmit 2>&1 && echo "orchestrator: OK"
+
+OUT
+Exit code 2
+orchestrator/tsconfig.json(9,5): error TS6306: Referenced project 'C:/DevProjects/solosolutions-agents/packages/shared' must have setting "composite": true.
+Bash Type-check Riley (triage)
+IN
+cd "c:/DevProjects/solosolutions-agents" && ./node_modules/.bin/tsc --project agents/support/triage/tsconfig.json --noEmit 2>&1 && echo "riley: OK"
+
+OUT
+<tool_use_error>Cancelled: parallel tool call Bash(cd "c:/DevProjects/solosolutions-agents"…) errored</tool_use_error>
+Bash Type-check Jordan (tier1-responder)
+IN
+cd "c:/DevProjects/solosolutions-agents" && ./node_modules/.bin/tsc --project agents/support/tier1-responder/tsconfig.json --noEmit 2>&1 && echo "jordan: OK"
+
+OUT
+<tool_use_error>Cancelled: parallel tool call Bash(cd "c:/DevProjects/solosolutions-agents"…) errored</tool_use_error>
+Need to add composite: true to the shared package for project references to work:
+
+Read c:\DevProjects\solosolutions-agents\packages\shared\tsconfig.json
+Edit c:\DevProjects\solosolutions-agents\packages\shared\tsconfig.json
+Added 1 line
+Bash Type-check orchestrator
+IN
+cd "c:/DevProjects/solosolutions-agents" && ./node_modules/.bin/tsc --project orchestrator/tsconfig.json --noEmit 2>&1 && echo "orchestrator: OK"
+
+OUT
+Exit code 2
+orchestrator/src/index.ts(2,24): error TS2307: Cannot find module '@solo/shared' or its corresponding type declarations.
+orchestrator/src/runner.ts(2,53): error TS2307: Cannot find module '@solo/shared' or its corresponding type declarations.
+orchestrator/src/runner.ts(3,55): error TS2307: Cannot find module '@solo/shared' or its corresponding type declarations.
+orchestrator/src/scheduler.ts(1,18): error TS7016: Could not find a declaration file for module 'node-cron'. 'C:/DevProjects/solosolutions-agents/node_modules/.pnpm/node-cron@3.0.3/node_modules/node-cron/src/node-cron.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/node-cron` if it exists or add a new declaration (.d.ts) file containing `declare module 'node-cron';`
+orchestrator/src/scheduler.ts(2,24): error TS2307: Cannot find module '@solo/shared' or its corresponding type declarations.
+pnpm workspaces need the symlink to resolve. Let me fix the module resolution approach — simpler to use path aliases in a monorepo with tsx:
+
+Bash Add node-cron types and check workspace symlinks
+IN
+cd "c:/DevProjects/solosolutions-agents" && npx pnpm add -D @types/node-cron -w 2>&1 && ls node_modules/@solo 2>&1
+
+OUT
+Exit code 2
+Progress: resolved 1, reused 0, downloaded 0, added 0
+ WARN  1 deprecated subdependencies found: node-domexception@1.0.0
+Progress: resolved 215, reused 0, downloaded 0, added 0, done
+
+devDependencies:
++ @types/node-cron ^3.0.11
+
+Packages: +1
++
+╭ Warning ─────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│   Ignored build scripts: esbuild@0.27.3.                                     │
+│   Run "pnpm approve-builds" to pick which dependencies should be allowed     │
+│   to run scripts.                                                            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+Done in 984ms using pnpm v10.31.0
+ls: cannot access 'node_modules/@solo': No such file or directory
+The workspace symlinks aren't being created. pnpm with node_modules needs the workspace packages to be linked. Let me check the workspace setup:
+
+Bash Check workspace config and pnpm structure
+IN
+cd "c:/DevProjects/solosolutions-agents" && cat pnpm-workspace.yaml && echo "---" && ls node_modules/.pnpm 2>/dev/null | head -5
+
+OUT
+packages:
+  - 'packages/*'
+  - 'agents/**'
+  - 'orchestrator'
+---
+@anthropic-ai+sdk@0.39.0
+@esbuild+win32-x64@0.27.3
+@jridgewell+sourcemap-codec@1.5.5
+@pinojs+redact@0.4.0
+@react-email+render@1.1.2_r_2cdd47436d7bf57d25194823a7dce734
+Bash Check workspace package resolution
+IN
+cd "c:/DevProjects/solosolutions-agents" && npx pnpm ls --filter @solo/shared 2>&1 && echo "---" && npx pnpm ls --filter @solo/orchestrator 2>&1
+
+OUT
+Legend: production dependency, optional only, dev only
+
+@solo/shared@0.1.0 C:\DevProjects\solosolutions-agents\packages\shared (PRIVATE)
+│
+│   dependencies:
+├── @anthropic-ai/sdk@0.39.0
+├── @supabase/supabase-js@2.98.0
+├── dotenv@16.6.1
+├── googleapis@148.0.0
+├── pino@9.14.0
+├── resend@4.8.0
+├── yaml@2.8.2
+├── zod@3.25.76
+│
+│   devDependencies:
+├── @types/node@22.19.15
+└── typescript@5.9.3
+
+10 packages
+---
+Legend: production dependency, optional only, dev only
+
+@solo/orchestrator@0.1.0 C:\DevProjects\solosolutions-agents\orchestrator (PRIVATE)
+│
+│   dependencies:
+├── @solo/shared@link:../packages/shared
+├── node-cron@3.0.3
+├── uuid@11.1.0
+│
+│   devDependencies:
+├── @types/node@22.19.15
+├── @types/uuid@10.0.0
+├── tsx@4.21.0
+└── typescript@5.9.3
+
+7 packages
+The workspace links exist but TypeScript can't resolve them because the shared package hasn't been built yet (no dist/ with .d.ts files). With tsx at runtime this works fine, but for type-checking we need to build shared first or use path mappings. Let me build it:
+
+Bash Build shared package to emit .d.ts files
+IN
+cd "c:/DevProjects/solosolutions-agents" && ./node_modules/.bin/tsc --project packages/shared/tsconfig.json 2>&1 && echo "shared: built" && ls packages/shared/dist/ 2>&1
+
+OUT
+shared: built
+anthropic.d.ts
+anthropic.d.ts.map
+anthropic.js
+anthropic.js.map
+config.d.ts
+config.d.ts.map
+config.js
+config.js.map
+index.d.ts
+index.d.ts.map
+index.js
+index.js.map
+logger.d.ts
+logger.d.ts.map
+logger.js
+logger.js.map
+supabase.d.ts
+supabase.d.ts.map
+supabase.js
+supabase.js.map
+types.d.ts
+types.d.ts.map
+types.js
+types.js.map
+Now let's type-check everything:
+
+Bash Type-check orchestrator
+IN
+cd "c:/DevProjects/solosolutions-agents" && ./node_modules/.bin/tsc --project orchestrator/tsconfig.json --noEmit 2>&1 && echo "orchestrator: OK"
+
+OUT
+orchestrator: OK
+Bash Type-check Riley
+IN
+cd "c:/DevProjects/solosolutions-agents" && ./node_modules/.bin/tsc --project agents/support/triage/tsconfig.json --noEmit 2>&1 && echo "riley: OK"
+
+OUT
+Exit code 2
+agents/support/triage/src/index.ts(2,37): error TS6059: File 'C:/DevProjects/solosolutions-agents/orchestrator/src/runner.ts' is not under 'rootDir' 'C:/DevProjects/solosolutions-agents/agents/support/triage/src'. 'rootDir' is expected to contain all source files.
+  File is ECMAScript module because 'C:/DevProjects/solosolutions-agents/orchestrator/package.json' has field "type" with value "module"
+Bash Type-check Jordan
+IN
+cd "c:/DevProjects/solosolutions-agents" && ./node_modules/.bin/tsc --project agents/support/tier1-responder/tsconfig.json --noEmit 2>&1 && echo "jordan: OK"
+
+OUT
+<tool_use_error>Cancelled: parallel tool call Bash(cd "c:/DevProjects/solosolutions-agents"…) errored</tool_use_error>
+Right — the AgentRunResult type shouldn't live in the orchestrator. It should be in shared. Let me fix that:
+
+Read c:\DevProjects\solosolutions-agents\packages\shared\src\types.ts (lines 2-6)
+Edit c:\DevProjects\solosolutions-agents\packages\shared\src\types.ts
+Added 6 lines
+Now update the agents and orchestrator to import from @solo/shared instead of crossing package boundaries:
+
+Edit c:\DevProjects\solosolutions-agents\agents\support\triage\src\index.ts
+Modified
+Edit c:\DevProjects\solosolutions-agents\agents\support\tier1-responder\src\index.ts
+Modified
+Read c:\DevProjects\solosolutions-agents\orchestrator\src\runner.ts (lines 2-6)
+Edit c:\DevProjects\solosolutions-agents\orchestrator\src\runner.ts
+Modified
+Now remove the duplicate AgentRunResult from runner.ts and update the import type in the dynamic import:
+
+Edit c:\DevProjects\solosolutions-agents\orchestrator\src\runner.ts
+Removed 6 lines
+Now rebuild shared and re-check everything:
+
+Bash Build shared, then type-check all packages
+IN
+cd "c:/DevProjects/solosolutions-agents" && ./node_modules/.bin/tsc --project packages/shared/tsconfig.json 2>&1 && echo "shared: OK" && ./node_modules/.bin/tsc --project orchestrator/tsconfig.json --noEmit 2>&1 && echo "orchestrator: OK" && ./node_modules/.bin/tsc --project agents/support/triage/tsconfig.json --noEmit 2>&1 && echo "riley: OK" && ./node_modules/.bin/tsc --project agents/support/tier1-responder/tsconfig.json --noEmit 2>&1 && echo "jordan: OK"
+
+OUT
+shared: OK
+orchestrator: OK
+riley: OK
+jordan: OK
+Everything compiles clean. Here's where we stand:
+
+Foundation scaffolded and compiling:
+
+Monorepo with pnpm workspaces — all packages linked
+@solo/shared — types (full team roster baked in), logger, Anthropic client, Supabase client, config loader
+@solo/orchestrator — scheduler (cron) + runner (lifecycle logging for every agent run)
+@solo/agent-riley (Triage) — skeleton ready for Gmail integration
+@solo/agent-jordan (Tier 1 Responder) — skeleton ready for KB search + response drafting
+configs/sololawyer.yaml — first vertical config
+All 21 agent directories created, ready for when each team member comes online
+Next steps to get Riley actually working:
+
+Build the Gmail tool (packages/shared/src/gmail.ts) — OAuth, fetch new emails, send replies
+Write Riley's system prompt and classification tools
+Set up the solosolutions_ops Supabase project with the tickets/runs/KB tables
+Wire it all together and test with a real email
+Want to keep going, or is this a good stopping point for tonight?
+
+So first, i like to understand what/how we're doing it. I'm watching as you have done everything.  AndI'm keen to see us get these agents up and running, but when you say Gmail tool, ok - but what Gmail acocunt and what email account are ou talking about, so I understand what's being done.
+Great question — and this is exactly the kind of thing we need to nail down before writing code.
+
+Here's the picture:
+
+What Riley (Triage) needs to do
+Riley watches an inbox like support@sololawyerai.com for incoming customer emails. When one arrives, she reads it, classifies it, and routes it to Jordan or Avery.
+
+What we need to make that work
+1. A Google Workspace account
+
+You need a Google Workspace subscription (starts at $7/mo) tied to your business. This gives you:
+
+Custom email addresses on your domains (support@sololawyerai.com, support@solovetai.com, etc.)
+Gmail API access (so Riley can programmatically read and send emails)
+A service account with domain-wide delegation (one credential that lets Riley access any mailbox across all verticals)
+2. A service account (not a regular Gmail login)
+
+Riley doesn't log into Gmail like a human. Instead, we create a Google Cloud service account — think of it as a robot ID card. With domain-wide delegation enabled, that one service account can read/send from support@sololawyerai.com, support@solovetai.com, etc. without needing separate passwords for each.
+
+3. The flow
+
+
+Customer emails support@sololawyerai.com
+        ↓
+Gmail receives it (Google Workspace)
+        ↓
+Riley polls Gmail API every 2 min: "any new emails?"
+        ↓
+Riley reads the email, classifies it, creates a ticket
+        ↓
+Jordan drafts and sends a reply FROM support@sololawyerai.com
+So my questions for you:
+Do you already have Google Workspace set up? If so, on which domain — solosolutionsai.com? sololawyerai.com?
+
+Do you have support@sololawyerai.com (or similar) as a mailbox/alias yet?
+
+Do you have a Google Cloud project? (This is where we create the service account — it's free, you just need a GCP project.)
+
+If none of this is set up yet, we can either:
+
+Set it up now (I can walk you through each step)
+Build Riley's code against a mock/test inbox first, then wire up the real Gmail when you're ready
+What's the current state of your Google/email setup?
+
+Yes, do already (you and I did this in the other sessions for sololawyer) have the google workspace for solowlawyerai.com and it was working, but I can't figure out where to access it?  LOL
+Ha! Yeah, we set that up together. Let me help you find it.
+
+Google Workspace admin console: You access it at admin.google.com — log in with whatever admin email you created on the sololawyerai.com domain. It's probably something like admin@sololawyerai.com or sean@sololawyerai.com.
+
+Google Cloud Console (where the service account would live): console.cloud.google.com — same Google login.
+
+Can you try logging into admin.google.com and let me know:
+
+What email address you log in with (the @sololawyerai.com one)
+Whether you see a support@sololawyerai.com mailbox or alias listed under Directory → Users
+Whether there's a Google Cloud project already (check console.cloud.google.com → project dropdown at the top)
+If you can't remember the password, check your password manager or try the Google account recovery flow for the admin account.
+
+Once we confirm what's already set up, we'll know exactly what's left to wire Riley into it.
+
+here
+You found it. You're logged in as sean@sololawyerai.com — Google Workspace is active and working. Fresh inbox, just the welcome email from Mar 7.
+
+Now here's what we need to do to get Riley connected:
+
+Step 1: Create the support@sololawyerai.com alias
+Riley will watch this inbox specifically. Go to:
+
+admin.google.com (click the grid icon top-right → "Admin")
+Directory → Users → click on your user (Sean Doherty)
+User information → Alternate email addresses (email alias)
+Add support as an alias
+This means emails to support@sololawyerai.com land in your same inbox — Riley will filter for them. (Later when you have more verticals, each gets its own support alias.)
+
+Step 2: Create a Google Cloud project + service account
+This gives Riley her "robot ID card" to access Gmail programmatically:
+
+Go to console.cloud.google.com
+Create a new project called solosolutions-agents
+Enable the Gmail API
+Create a Service Account → download the JSON key
+In Admin console → Security → API Controls → Domain-wide delegation, authorize the service account with Gmail scopes
+Step 3: Wire the credentials into our codebase
+The service account JSON goes into our .env file, and Riley uses it to poll Gmail.
+
+Want to tackle these steps now? Start with Step 1 (the alias) — it's the quickest. Then we'll do the Cloud project together.
+
+we already have the aliases here,but where do I find them - lol:
+You're in the right place — just one click away. In the left sidebar, click Users (right above where you are now under Directory). That'll show you the user list. Click on Sean Doherty, then look for Alternate email addresses (email alias) in the user details — that's where the aliases like support@sololawyerai.com should be listed.
+
+here you go:
+There they are. You've already got:
+
+support@sololawyerai.com — this is what Riley will watch
+info@sololawyerai.com — useful for marketing later
+Plus the test-google domain variants
+Step 1 is already done. Now for Step 2 — the Google Cloud project + service account. This is Riley's robot credentials.
+
+Go to console.cloud.google.com (you can open a new tab). Log in with your sean@sololawyerai.com account. Tell me what you see — it might already have a project from when we set up Workspace, or it might ask you to create one.
+
+here's what I see:
+Fresh Google Cloud account — no existing project. Go ahead and:
+
+Check the Terms of Service box
+Click "Agree and continue"
+That'll get you into the console. Once you're in, we'll create a project and set up Riley's service account. Let me know when you're through.
+
+we're in
+You're in, and it auto-created the sololawyerai.com organization. Now let's create a project:
+
+Click "Select a project" (top-left, next to the Google Cloud logo)
+In the dialog that opens, click "NEW PROJECT" (top-right)
+Set:
+Project name: solosolutions-agents
+Organization: leave as sololawyerai.com
+Location: leave as sololawyerai.com
+Click "CREATE"
+Once it's created, let me know and we'll enable the Gmail API and create Riley's service account.
+
+hang on.  here's what we have so far:
+Project name looks good — solosolutions-agents with matching project ID.
+
+For the Parent resource field, click Browse and select sololawyerai.com (your organization). Then hit Create.
+
+there isn't one. remember this is all new:
+That's fine — just select "No organization" (click on it to highlight it), then click Select. After that, hit Create.
+
+The sololawyerai.com organization was just created moments ago so it may not have propagated to the project picker yet. "No organization" works perfectly — you can move the project under the org later if needed. Won't affect anything we're building.
+
+hmmm
+The organization just got created — permissions haven't propagated yet. Close that dialog (click Cancel), then try this:
+
+Refresh the page (F5)
+Click "Select a project" at the top → "NEW PROJECT" again
+This time the sololawyerai.com organization should appear in the Browse list
+If it still doesn't show up, it can take a few minutes for a brand new organization to fully propagate. Give it 2-3 minutes and try again. Google Cloud org creation is sometimes slow to sync.
+
+this all good?
+That's perfect. Project name solosolutions-agents, organization sololawyerai.com, parent resource sololawyerai.com. Hit Create.
+
+and here we are
+Project created. I can see the notification: "Create Project: solosolutions-agents" with a green checkmark.
+
+Now click "Select Project" in that notification (the blue link) to switch into the project. Once you're in, we need to do two things:
+
+Enable the Gmail API
+Create a service account (Riley's credentials)
+Go ahead and click Select Project, then show me what you see.
+
+and here we are :)
+You're in the solosolutions-agents project under sololawyerai.com org. Now let's enable the Gmail API.
+
+In the left sidebar, click APIs & Services
+Then click "Enable APIs and Services" (button at the top)
+Search for "Gmail API"
+Click on it and hit Enable
+Show me when you've got it enabled.
+
+here you go:
+Gmail API is enabled — Status: Enabled. Now let's create Riley's service account.
+
+In the left sidebar, click Credentials
+At the top, click "+ CREATE CREDENTIALS"
+Select "Service account"
+Fill in:
+Service account name: riley-support-agent
+Service account ID: (will auto-fill as riley-support-agent)
+Description: Support triage agent — reads and responds to support emails
+Click "CREATE AND CONTINUE"
+For the role, you can skip it (click "CONTINUE") — we don't need GCP roles, just Gmail access
+Click "DONE"
+Show me when you're there.
+
+before done tere was still this option:
+You can skip this step too — leave the "Service account users role" and "Service account admins role" fields empty. Just click Done.
+
+This step is about letting other people use the service account, which you don't need — you're the only admin.
+
+here you go:
+Riley's service account is created: riley-support-agent@solosolutions-agents.iam.gserviceaccount.com. Now we need to do two things:
+
+A. Download the JSON key (Riley's credentials)
+Click on riley-support-agent@solosolutions-agents.iam.gserviceaccount.com (the blue link)
+Go to the Keys tab
+Click "ADD KEY" → "Create new key"
+Select JSON format
+Click Create — it will download a .json file to your computer
+Keep that file safe — it's Riley's password essentially. We'll base64-encode it and put it in our .env file.
+
+B. Enable domain-wide delegation (so Riley can access Gmail)
+While you're on the service account page:
+
+Go to the Details tab
+Look for "Domain-wide delegation" section
+Click "Enable domain-wide delegation" (you may need to expand "Show advanced settings")
+Note the Client ID number — we'll need it for the next step
+Do part A first (download the key), then let's tackle B. Show me what you see.
+
+hmmm:
+Google's "Secure by Default" org policy is blocking service account key creation. We need to disable that constraint. Here's how:
+
+Close this dialog
+In the left sidebar, click Organization Policies (I can see it in your sidebar)
+Search for iam.disableServiceAccountKeyCreation
+Click on it
+Click "MANAGE POLICY" (or Edit)
+Set the enforcement to "Not enforced" (or add a rule that allows it)
+Save
+Then come back to Riley's service account Keys tab and try creating the key again.
+
+This is a one-time thing — Google enforces it by default on new orgs for security, but since you're the admin and we need the key for programmatic access, it's fine to allow it.
+
+here not quite sure
+I can see the search results. You need to find the specific policy in the list below. Scroll down in the policies table and look for one called "Disable service account key creation" — it should have the constraint name iam.managed.disableServiceAccountKeyCreation. It'll likely show as Active (green checkmark).
+
+Actually, I can see "Block service account API key bindings" is Active in your list. But the one we need is specifically about key creation.
+
+Close the search dropdown and in the Filter field in the table, type disableServiceAccount. You should see the key creation policy. Click on it, then we'll set it to "Not enforced."
+
+Alternatively — just scroll down the list looking for any row with "service account key creation" in the name that shows Active.
+
+this?
+You ended up on the docs page — that's helpful info but not where we need to be. Go back to the Organization policies tab (should still be open in your browser tabs).
+
+In the policies list, you need to find and click on the policy named "Disable service account key creation". It has the constraint ID iam.managed.disableServiceAccountKeyCreation.
+
+Try using the Filter field in the table (not the top search bar) and type key creation. Or just scroll down the alphabetical list looking for it — it should show a green Active badge.
+
+Once you click on it, you'll see a "Manage Policy" or "Edit" button to change the enforcement.
+
+try this:
+I can see it. Look at the row "Disable service account key creation" with ID iam.managed.disableServiceAccountKeyCreation — it shows as Inactive right now, which is actually good. But the error you got earlier mentioned a different policy.
+
+Look just above it — "Block service account API key bindings" with ID iam.managed.disableServiceAccountApiKeyCreation is Active. That's likely the one blocking us.
+
+Click on "Block service account API key bindings" (the Active one) to open it, then we'll disable the enforcement.
+
+hmmm
+There it is — Status: Enforced, inherited from the parent's policy. Click "Manage policy" (the pencil icon next to the policy name near the top).
+
+That will let you override the inherited policy at the project level. You'll want to set a rule that says "Not enforced" to allow service account key creation for this project.
+
+and....
+You need the Organization Policy Administrator role to edit this. We need to grant that to your account first.
+
+Close this popup
+In the left sidebar, click IAM (at the very top)
+Find your user (sean@sololawyerai.com) in the list
+Click the pencil icon (Edit) next to your name
+Click "ADD ANOTHER ROLE"
+Search for and add: Organization Policy Administrator
+Click Save
+Then come back to this policy page and try "Manage policy" again. It should let you through this time.
+
+here?
+You're almost there. I can see the Organization Policy category is highlighted in the left column. Now on the right side, I don't see "Organization Policy Administrator" listed — just "Access Transparency Admin" and "Organization Policy Viewer".
+
+Try typing "Organization Policy Admin" in the search box at the top of the dropdown (where it says "Search Service, role or permission"). That should filter to the exact role we need.
+
+If it doesn't show up at the project level, it might need to be granted at the organization level instead. In that case, close this panel and go to the project selector at the top → switch to the sololawyerai.com organization → then IAM → grant the role there.
+
+Hmm....
+An image in the conversation exceeds the dimension limit for many-image requests (2000px). Start a new session with fewer images.
+
+ok, apparently I can't show you screen shots anymore - lol
+An image in the conversation exceeds the dimension limit for many-image requests (2000px). Start a new session with fewer images.
+

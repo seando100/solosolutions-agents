@@ -1,0 +1,14 @@
+{
+  "name": "@solo/agent-jordan",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Clark — Tier 1 Support Rep. Handles everyday support questions autonomously using the knowledge base. Sends branded replies.",
+  "dependencies": {
+    "@solo/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2",
+    "@types/node": "^22.13.10"
+  }
+}
