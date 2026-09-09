@@ -6,6 +6,11 @@ against real inboxes, a real database and real customers.
 
 This is not a demo harness. Riley reads actual support email every two minutes.
 
+## How it got this shape
+
+[`docs/process-map.md`](docs/process-map.md) covers the two processes this replaced, why each was
+worth automating, and the specific ways the first attempts were wrong.
+
 ## The four families
 
 | Family | Count | What it owns |
